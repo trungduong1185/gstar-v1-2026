@@ -17,7 +17,10 @@ const What = ({ id }) => {
       <div id={id} />
       <div className="container center flex flex-wrap flex-column flex-row-l">
         {/* <!-- cot 1 --> */}
-        <div className="w-100 w-30-l f2 fw7 ttu ph2 pl0 pr5-l pc-what-title tc tl-l tracked-l">
+        <div
+          className="w-100 w-30-l f2 fw7 ttu ph2 pl0 pr5-l pc-what-title tc tl-l tracked-l"
+          style={!isMobile ? { position: 'sticky', top: '6rem', alignSelf: 'flex-start' } : undefined}
+        >
           What you will <br />
           learn in this <br />
           bootcamp
