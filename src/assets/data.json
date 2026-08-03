@@ -1,9 +1,9 @@
 {
-    "register_link": "https://docs.google.com/forms/d/e/1FAIpQLSe8QB1AiVdj526CPrQR6klTCgCyTtFvhOyg-EHrHZm1mNqExg/viewform",
+    "register_link": "https://forms.gle/ktHS2jTVTVcpRS6t8",
     "subscribe_link": "https://vietai.us6.list-manage.com/subscribe/post?u=57067948e12d221d6b91a332c&amp;id=3c0d93f5bd",
     "countdown": {
-        "time_to_start": "2025-08-13T23:59:59",
-        "deadline": "August 13, 2025, Indochina Time"
+        "time_to_start": "2026-08-10T23:59:59",
+        "deadline": "August 10, 2026, Indochina Time"
     },
     "menu": {
         "top": {
@@ -318,8 +318,36 @@
                     "image": "m_2025_hieu_ngo.webp",
                     "title": "<ul class=\"mentors-title\"><li>Senior AI Engineer at MoMo</li><li class=\"i\">GStar Academic Team</li></ul>",
                     "description": "Hieu Ngo is a Senior AI Engineer at MoMo, where he leads the AI Research and Development team. He earned his B.S. in Computer Science from the University of California, Los Angeles in 2019, where he collaborated with Trieu H. Trinh and Minh-Thang Luong (DeepMind). Ngo has contributed to influential projects such as HarmBench, a standardized framework for automated red teaming, Representation Engineering, and Circuit Breakers for improving alignment and robustness. He is also a co-author on large-scale initiatives like BLOOM and multilingual models, and his research spans LLMs, transparency, and safety evaluations. Ngo's work has appeared in ACL, NAACL, EACL, and leading AI conferences."
+                },
+                {
+                    "id": 18,
+                    "name": "Hannes Stärk",
+                    "image": "m_2025_hannes_stark.webp",
+                    "title": "<ul class=\"mentors-title\"><li>Founding Scientist at Boltz</li><li>PhD in EECS, MIT</li><li class=\"i\">GStar Academic Team</li></ul>",
+                    "description": "Hannes Stärk is a founding scientist at Boltz. He received his PhD in Electrical Engineering and Computer Science from MIT, where he was advised by Tommi Jaakkola and Regina Barzilay. His work focuses on machine learning for biomolecular engineering, including structure and affinity prediction, molecular dynamics, and drug design. He also hosts Starkly Speaking, a weekly reading group where participants discuss research papers with their authors across machine learning for biology, molecular dynamics, diffusion, generative models, and protein design."
+                },
+                {
+                    "id": 19,
+                    "name": "Sang T. Truong",
+                    "image": "m_2025_sangtruong.webp",
+                    "title": "<ul class=\"mentors-title\"><li>Ph.D. Student in Computer Science at Stanford University</li><li class=\"i\">GStar Academic Team</li></ul>",
+                    "description": "Sang T. Truong is a Ph.D. student in Computer Science at Stanford University, where he develops foundations for AI Measurement Science — drawing on probabilistic machine learning, measurement theory, and mechanism design to improve how AI systems are evaluated. His work supports the development of AI systems that serve people across diverse backgrounds and needs. He is advised by Sanmi Koyejo and Nick Haber at the Stanford AI Lab, and his research is supported by the Stanford Data Science Scholarship, the Stanford Human-Centered AI Fellowship, and the Microsoft Research Fellowship."
+                },
+                {
+                    "id": 20,
+                    "name": "Tri Dao",
+                    "image": "m_2025_tridao.webp",
+                    "title": "<ul class=\"mentors-title\"><li>Assistant Professor of Computer Science at Princeton University</li><li>Co-founder & Chief Scientist of Together AI</li><li class=\"i\">GStar Guest Lecturer</li></ul>",
+                    "description": "Tri Dao is an Assistant Professor of Computer Science at Princeton University, where he leads the Dao AI Lab, and Co-founder and Chief Scientist of Together AI. He completed his PhD in Computer Science at Stanford University. His research spans machine learning and systems, with a focus on efficient training and inference — including hardware-aware algorithms and sequence models with long-range memory. His work has been recognized with the Schmidt Sciences AI2050 Fellowship (2025), the Google ML and Systems Junior Faculty Award and Google Research Scholar Award (2025), and multiple best- and outstanding-paper honors at MLSys, COLM, and ICML."
+                },
+                {
+                    "id": 21,
+                    "name": "Dr. Youngsuk Park",
+                    "image": "m_2025_youngsuk.webp",
+                    "title": "<ul class=\"mentors-title\"><li>Senior Applied Scientist & Research Lead at AWS AI</li><li>Core Algorithm Team Lead at AWS Annapurna Science</li><li class=\"i\">GStar Guest Lecturer</li></ul>",
+                    "description": "Dr. Youngsuk Park is a Senior Applied Scientist and Research Lead at Amazon Web Services (AWS) AI, where he leads the Core Algorithm team at AWS Annapurna Science, managing a research organization of 14+ applied scientists, Amazon scholars, and research interns. His team develops algorithms that power foundation models across Amazon Bedrock, AGI, and Anthropic partnerships, and he has co-authored 35+ papers at top machine learning conferences including ICLR, ICML, NeurIPS, AISTATS, and KDD. His research spans hardware-aware model architectures and fine-grained scaling laws for high-throughput systems, efficient training via low-precision methods and system-aware optimizers, post-training and alignment through RLVR-based approaches and robust reward modeling, and generative AI for systems such as DSL kernel synthesis via inference-time scaling. He received his Ph.D. in Electrical Engineering from Stanford University in 2020, advised by Stephen P. Boyd and Jure Leskovec, following an M.S. from Stanford in 2016 and a B.S. from KAIST in 2013 (Summa Cum Laude)."
                 }
-                
+
             ]
         }   
     ],
@@ -327,7 +355,7 @@
         {
             "title": "Registration",
             "date": "June 7 - June 30",
-            "description": "Click <a href='https://forms.gle/Vew1ywYdZQejCgj96' class='blue fw5 pointer' id=''>APPLY</a> to fill the registration form. In this form, we expect to learn more about your company, milestones, & primary roadblocks in terms of applying AI to your business model. Please respond carefully with your best effort.<br/><br/>To achieve great outcomes, we expect at least two members (1 business & 1 tech lead/executive) per company to enroll in our program. For us to fully evaluate the company's potential, we expect to get detailed answers jointly by 1 business & 1 tech lead/executive. Only 1 submission per company."
+            "description": "Click <a href='https://forms.gle/ktHS2jTVTVcpRS6t8' class='blue fw5 pointer' id=''>APPLY</a> to fill the registration form. In this form, we expect to learn more about your company, milestones, & primary roadblocks in terms of applying AI to your business model. Please respond carefully with your best effort.<br/><br/>To achieve great outcomes, we expect at least two members (1 business & 1 tech lead/executive) per company to enroll in our program. For us to fully evaluate the company's potential, we expect to get detailed answers jointly by 1 business & 1 tech lead/executive. Only 1 submission per company."
         },
         {
             "title": "Screening",

@@ -68,7 +68,7 @@ const HtmlCountDown = ({ d, h, m, s }) => (
       <p className="tc f2 fw7 center w-90 mt4">
       GStar Bootcamp  
       <br />
-                NTI Global Talent Program 2025
+                NTI Global Talent Program 2026
       </p>
 
       <div className="tc pc-info tracked f6 w-90 center lh-title pt4">
@@ -78,7 +78,7 @@ const HtmlCountDown = ({ d, h, m, s }) => (
         <b>Aspiring Startups in Vietnam</b> */}
         Empowering future AI leaders in Asia-Pacific and beyond.
         <br />
-        A 12-week, fully online accelerator that equips emerging AI talents with cutting-edge technical expertise and leadership skills - culminating in a showcase at our GenAI Summit 2025
+        A 12-week, fully online accelerator that equips emerging AI talents with cutting-edge technical expertise and leadership skills - culminating in a showcase at our GenAI Summit 2026
 
       </div>
     </div>
@@ -99,7 +99,7 @@ const HtmlCountDown = ({ d, h, m, s }) => (
         <div className="flex flex-column countdown-title pc-white tracked tc mt4">
           <p className="fw7">GStar Bootcamp</p>
           <p className="fw7">
-            NTI Global Talent Program 2025
+            NTI Global Talent Program 2026
           </p>
         </div>
         <div className="tc countdown-subdetail tracked center w-70">
@@ -110,7 +110,7 @@ const HtmlCountDown = ({ d, h, m, s }) => (
           <b>Aspiring Startups in Vietnam</b> */}
          Empowering future AI leaders in Asia-Pacific and beyond.
           <br />
-          A 12-week, fully online accelerator that equips emerging AI talents with cutting-edge technical expertise and leadership skills - culminating in a showcase at our GenAI Summit 2025
+          A 12-week, fully online accelerator that equips emerging AI talents with cutting-edge technical expertise and leadership skills - culminating in a showcase at our GenAI Summit 2026
 
         </div>
 

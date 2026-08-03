@@ -6,19 +6,19 @@ import './styles.css';
 const ProgramTimeline = ({ id }) => {
   const timelineData = [
     {
-      month: '30 July - 17 August',
+      month: '1 July - 10 August',
       title: 'Recruitment',
-      description: ['<b>Aug 13:</b> deadline to apply', '<b>Aug 14-15:</b> entrance test for selected candidates', '<b>Aug 16-17:</b> final evaluation'],
+      description: ['<b>Jul 25:</b> Early Bird deadline', '<b>Aug 10:</b> Final deadline to apply', 'Entrance test & final evaluation on a rolling basis (instructions by email)'],
       position: 'left'
     },
     {
-      month: '25 August - 14 NOVEMBER',
+      month: 'Early September - December 2026',
       title: 'Official Program',
       description: '12-week intensive training and project development',
       position: 'center'
     },
     {
-      month: 'NOVEMBER',
+      month: 'December 2026 - 2027',
       title: 'Presentation at GenAI Summit',
       description: 'Showcase your capstone project to industry leaders',
       position: 'right'

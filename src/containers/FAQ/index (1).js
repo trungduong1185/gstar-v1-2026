@@ -17,7 +17,7 @@ const FAQ = () => {
     },
     {
       question: "When does the program take place? What is the specific timeline?",
-      answer: "Learners will join two parallel tracks from mid-August to mid-November, with one evening session per week (7:30 PM - 9:30 PM VNT) and one morning session (8:30 AM - 10:30 AM VNT). The final project presentation will be held offline at GenAI Summit 2025 in November."
+      answer: "Learners will join two parallel tracks from mid-August to mid-November, with one evening session per week (7:30 PM - 9:30 PM VNT) and one morning session (8:30 AM - 10:30 AM VNT). The final project presentation will be held offline at GenAI Summit 2026 in November."
     },
     {
       question: "What are the graduation requirements?",
@@ -29,7 +29,7 @@ const FAQ = () => {
     },
     {
       question: "When and how will I be notified of admission decisions?",
-      answer: "Outcomes announced via email by early-August 2025. Accepted applicants receive next-step instructions and onboarding details in the same notification."
+      answer: "Outcomes announced via email by early-August 2026. Accepted applicants receive next-step instructions and onboarding details in the same notification."
     },
     {
       question: "What language will the program be conducted in?",

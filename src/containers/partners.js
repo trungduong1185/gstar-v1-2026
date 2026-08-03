@@ -19,20 +19,6 @@ const Partners = () => (
               src="images/partners/google.svg"
               className="accordion featured"
             />
-          </a>      
-
-          <a 
-            href="https://vietai.org/" 
-            className="partner-element" 
-            target="_blank" 
-            rel="noreferrer"
-            title="VietAI - Vietnamese AI Research Community"
-          >
-            <img
-              alt="Nexia - nexia-impact-capital"
-              src="images/partners/nexia-impact-capital.webp"
-              className="accordion featured"
-            />
           </a>
         </div>
       </div>
@@ -53,20 +39,7 @@ const Partners = () => (
               className="accordion featured"
             />
           </a>
-          <a 
-            href="https://elsaspeak.com/" 
-            className="partner-element" 
-            target="_blank" 
-            rel="noreferrer"
-            title="ELSA Speak - English Learning"
-          >
-            <img
-              alt="ELSA Speak - English Learning"
-              src="images/partners/elsa.svg"
-              className="accordion featured"
-            />
-          </a>
-          <a 
+          <a
             href="https://vietai.org/" 
             className="partner-element" 
             target="_blank" 

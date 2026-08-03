@@ -32,7 +32,7 @@ const Footers = () => (
             <img src="images/fb.svg" alt="" className="ml3" />
           </a>
         </div>
-        <p className="copyright mt3 pc-pink-white">Copyright 2025 @ NTI</p>
+        <p className="copyright mt3 pc-pink-white">Copyright 2026 @ NTI</p>
       </div>
     </div>
     <div
