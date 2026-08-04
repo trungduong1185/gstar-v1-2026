@@ -208,15 +208,8 @@
                     "id": 1,
                     "name": "Dr. Thang Luong",
                     "image": "m_2025_thangluong.webp",
-                    "title": "<ul class=\"mentors-title\"><li>Senior Staff Research Scientist at Google DeepMind</li><li>Co-founder of NTI</li><li class=\"i\">GStar Program Director</li></ul>",
-                    "description": "Thang Luong is currently a Senior Staff Research Scientist and Senior Manager at Google DeepMind, formerly Google Brain. He obtained his PhD in Computer Science from Stanford University in 2016, during which he pioneered the field of deep learning for machine translation. At Google, Dr. Luong built state-of-the-art models in both language (QANet, ELECTRA) and vision (UDA, NoisyStudent). He co-founded Project Meena, which debuted the world's best chatbot in 2020 and later became Google LaMDA chatbot in 2021. Dr. Luong has been co-leading the development of Bard Multimodality since 2022 and is the principal investigator of the AlphaGeometry project (published in Nature, 2024) that solves Olympiad-level geometry problems and competes at the International Mathematical Olympiad (IMO). Recently, he leads the Superhuman Reasoning team at Google to built the first AI that reaches Silver medalist level at IMO 2024."
-                },
-                {
-                    "id": 2,
-                    "name": "Dr. Yi Tay",
-                    "image": "m_2025_yitay.webp",
-                    "title": "<ul class=\"mentors-title\"><li>Scientist & Engineer at Google DeepMind</li><li class=\"i\">GStar Overall Technical Lead</li></ul>",
-                    "description": "Yi Tay is a Senior Staff Research Scientist at Google DeepMind, previously spending over three years at Google Brain Singapore, where he contributed to cutting-edge research on large language models (LLMs) and NLP. He is also a co-founder of Reka AI, where his team developed Reka Core, a model that ranked in the top 5 on LMsys and competed with GPT-4 under limited resources.<br>Yi Tay's work explores emergent abilities, scaling laws, and the science behind LLMs, combining academic rigor with real-world applications. Passionate about advancing AI, he continues to push the boundaries of trustworthy, scalable, and efficient language models."
+                    "title": "<ul class=\"mentors-title\"><li>Principal Scientist and Research Director at Google DeepMind</li><li>Founder of NTI</li><li class=\"i\">GStar Program Director</li></ul>",
+                    "description": "Thang Luong is currently a Principal Scientist and Research Director at Google DeepMind, formerly Google Brain. He obtained his PhD in Computer Science from Stanford University in 2016, during which he pioneered the field of deep learning for machine translation. At Google, Dr. Luong built state-of-the-art models in both language (QANet, ELECTRA) and vision (UDA, NoisyStudent). He co-founded Project Meena, which debuted the world's best chatbot in 2020 and later became Google LaMDA chatbot in 2021. Dr. Luong has been co-leading the development of Bard Multimodality since 2022 and is the principal investigator of the AlphaGeometry project (published in Nature, 2024) that solves Olympiad-level geometry problems and competes at the International Mathematical Olympiad (IMO). Recently, he leads the Superhuman Reasoning team at Google to built the first AI that reaches Silver medalist level at IMO 2024."
                 },
                 {
                     "id": 3,
@@ -238,6 +231,13 @@
                     "image": "m_2025_preslavnakov.webp",
                     "title": "<ul class=\"mentors-title\"><li>Department Chair and Professor of Natural Language Processing at MBZUAI</li><li class=\"i\">GStar Senior Advisor</li></ul>",
                     "description": "Preslav Nakov is Professor and Department Chair for NLP at the Mohamed bin Zayed University of Artificial Intelligence (MBZUAI). His research focuses on natural language processing, with a particular interest in large language models. He is part of the core team at MBZUAI's Institute for Foundation Models that developed Jais, the world's best open-source Arabic-centric LLM, Nanda, the world's best open-weights Hindi model, Sherkala, the world's best open-weights Kazakh model, and LLM360, the first truly open LLM (open weights, open data, and open code). <br><br>A prominent figure in computational linguistics, he is Chair of the European Chapter of the Association for Computational Linguistics (EACL). He served as Program Committee Chair for ACL 2022, as President of ACL SIGLEX, as Secretary of SIGSLAV, and holds editorial roles across leading NLP and AI journals. His research has been featured in MIT Technology Review, Forbes, WIRED, Fast Company, and Communications of the ACM, among others."
+                },
+                {
+                    "id": 2,
+                    "name": "Dr. Yi Tay",
+                    "image": "m_2025_yitay.webp",
+                    "title": "<ul class=\"mentors-title\"><li>Scientist & Engineer at Google DeepMind</li><li class=\"i\">GStar Guest Lecturer</li></ul>",
+                    "description": "Yi Tay is a Senior Staff Research Scientist at Google DeepMind, previously spending over three years at Google Brain Singapore, where he contributed to cutting-edge research on large language models (LLMs) and NLP. He is also a co-founder of Reka AI, where his team developed Reka Core, a model that ranked in the top 5 on LMsys and competed with GPT-4 under limited resources.<br>Yi Tay's work explores emergent abilities, scaling laws, and the science behind LLMs, combining academic rigor with real-world applications. Passionate about advancing AI, he continues to push the boundaries of trustworthy, scalable, and efficient language models."
                 },
                 {
                     "id": 6,
@@ -323,7 +323,7 @@
                     "id": 18,
                     "name": "Hannes Stärk",
                     "image": "m_2025_hannes_stark.webp",
-                    "title": "<ul class=\"mentors-title\"><li>Founding Scientist at Boltz</li><li>PhD in EECS, MIT</li><li class=\"i\">GStar Academic Team</li></ul>",
+                    "title": "<ul class=\"mentors-title\"><li>Founding Scientist at Boltz</li><li>PhD in EECS, MIT</li><li class=\"i\">GStar Guest Lecturer</li></ul>",
                     "description": "Hannes Stärk is a founding scientist at Boltz. He received his PhD in Electrical Engineering and Computer Science from MIT, where he was advised by Tommi Jaakkola and Regina Barzilay. His work focuses on machine learning for biomolecular engineering, including structure and affinity prediction, molecular dynamics, and drug design. He also hosts Starkly Speaking, a weekly reading group where participants discuss research papers with their authors across machine learning for biology, molecular dynamics, diffusion, generative models, and protein design."
                 },
                 {
