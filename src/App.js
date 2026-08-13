@@ -15,6 +15,9 @@ import About from './containers/About';
 import ProgramTimeline from './containers/ProgramTimeline';
 import FAQ from './containers/FAQ';
 import Partners from './containers/partners';
+import CohortStats from './containers/CohortStats';
+import CohortProjects from './containers/CohortProjects';
+import Testimonials from './containers/Testimonials';
 
 function App() {
   return (
@@ -29,7 +32,10 @@ function App() {
       <Mentorships id={menu.aiexpertnetwork.id} title="AI EXPERT NETWORK" />
       <Vision id={menu.transformation.id} />    
       <Fee id={menu.tuitionfee.id} />
-     
+      <CohortStats />
+      <CohortProjects />
+      <Testimonials />
+
       <FAQ id={menu.faq.id} />
       <Partners />
       {/* <Process /> */}

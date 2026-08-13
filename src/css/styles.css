@@ -659,3 +659,157 @@ _qa-title
 .partner-element img {
   height: 60px;
 }
+
+/* ===== Hero (2026 redesign) ===== */
+.hero-2026 {
+  background-color: #05050a;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 120px 32px 116px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 92vh;
+}
+/* Old-style countdown boxes reused inside the hero */
+.hero-countdown-old {
+  gap: 0;
+  row-gap: 8px;
+}
+.khoiVuong {
+  padding: 12px 16px;
+  min-width: 92px;
+}
+.soTo {
+  font-size: 2.25rem;
+  line-height: 1;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .khoiVuong {
+    min-width: 62px;
+    padding: 8px 10px;
+  }
+  .soTo {
+    font-size: 1.5rem;
+  }
+  .hero-countdown-old .soTo.ph3 {
+    display: none;
+  }
+  .hero-countdown-old {
+    gap: 10px;
+  }
+}
+.hero-2026-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.68);
+  margin-bottom: 26px;
+}
+.hero-title {
+  margin: 0 0 20px;
+  font-size: clamp(2.75rem, 8vw, 5.25rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: #fff;
+}
+.hero-subtitle {
+  font-size: clamp(1.15rem, 3vw, 1.4375rem);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 22px;
+  max-width: 700px;
+}
+.hero-desc {
+  margin: 0 0 40px;
+  max-width: 720px;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+}
+.hero-countdown {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 12px;
+  padding: 20px 28px;
+  flex-wrap: wrap;
+}
+.hero-cd-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 70px;
+}
+.hero-cd-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+.hero-cd-value {
+  font-size: 2.125rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px 18px;
+  min-width: 64px;
+}
+.hero-apply {
+  display: inline-block;
+  background: #f1f3f5;
+  color: #731013;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 18px 44px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 160ms cubic-bezier(0.2, 0, 0, 1);
+}
+.hero-apply:hover {
+  background: #fff;
+}
+.hero-deadline {
+  margin-top: 18px;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+@media (max-width: 768px) {
+  .hero-2026 {
+    padding: 96px 20px 80px;
+  }
+  .hero-countdown {
+    gap: 10px;
+    padding: 16px 18px;
+  }
+  .hero-cd-unit {
+    min-width: 56px;
+  }
+  .hero-cd-value {
+    font-size: 1.6rem;
+    padding: 10px 12px;
+    min-width: 52px;
+  }
+}

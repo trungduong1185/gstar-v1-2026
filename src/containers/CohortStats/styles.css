@@ -1,0 +1,270 @@
+/* ── CohortStats ──────────────────────────────────────────────── */
+
+.cs-section {
+  background: #731013;
+  padding: 104px 32px;
+}
+
+/* Eyebrow */
+.cs-eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Headings */
+.cs-h2 {
+  margin-top: 22px;
+  max-width: 780px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+/* Lead text */
+.cs-lead {
+  margin-top: 26px;
+  max-width: 780px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ── Stats bar ─────────────────────────────────────────────────── */
+
+.cs-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.cs-stat {
+  padding: 32px 28px;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* last column — no right border */
+.cs-stat:nth-child(3n) {
+  border-right: none;
+}
+
+/* last row — no bottom border */
+.cs-stat:nth-child(n+4) {
+  border-bottom: none;
+}
+
+.cs-stat-num {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.cs-stat-desc {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 8px;
+  line-height: 1.45;
+}
+
+.cs-source {
+  margin-top: 16px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.5;
+}
+
+/* ── Gallery ───────────────────────────────────────────────────── */
+
+.cs-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cs-gallery__lead img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cs-gallery__support {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.cs-gallery__support img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── See Previous Cohorts CTA ─────────────────────────────────── */
+
+.cs-cta {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.cs-btn-ghost {
+  display: inline-block;
+  padding: 13px 32px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.cs-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/* ── Events subsection ─────────────────────────────────────────── */
+
+.cs-events {
+  margin-top: 80px;
+  padding-top: 56px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cs-event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.cs-event-photo,
+.cs-event-video {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cs-event-photo {
+  aspect-ratio: 16 / 10;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  text-decoration: none;
+}
+
+.cs-event-video-wrap {
+  aspect-ratio: 16 / 10;
+  position: relative;
+}
+
+.cs-event-video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.cs-event-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, transparent 100%);
+  color: #fff;
+  padding: 20px 16px 14px;
+}
+
+.cs-event-caption h4 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: #fff;
+}
+
+.cs-event-caption p,
+.cs-event-caption a {
+  font-size: 0.8125rem;
+  margin: 0;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+.cs-event-caption a:hover {
+  text-decoration: underline;
+}
+
+/* ── Mobile ────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .cs-section {
+    padding: 64px 20px;
+  }
+
+  .cs-h2 {
+    font-size: 1.5rem;
+  }
+
+  .cs-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* last row on 2-col: items 5 & 6 */
+  .cs-stat:nth-child(n+4) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .cs-stat:nth-child(n+5) {
+    border-bottom: none;
+  }
+
+  /* reset 3-col rule, apply 2-col rule */
+  .cs-stat:nth-child(3n) {
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .cs-stat:nth-child(2n) {
+    border-right: none;
+  }
+
+  .cs-stat-num {
+    font-size: 1.75rem;
+  }
+
+  .cs-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-gallery__lead {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  .cs-event-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cs-event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

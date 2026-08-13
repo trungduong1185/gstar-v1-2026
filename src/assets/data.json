@@ -2,8 +2,8 @@
     "register_link": "https://forms.gle/ktHS2jTVTVcpRS6t8",
     "subscribe_link": "https://vietai.us6.list-manage.com/subscribe/post?u=57067948e12d221d6b91a332c&amp;id=3c0d93f5bd",
     "countdown": {
-        "time_to_start": "2026-08-10T23:59:59",
-        "deadline": "August 10, 2026, Indochina Time"
+        "time_to_start": "2026-08-23T23:59:59",
+        "deadline": "August 23, 2026, Indochina Time"
     },
     "menu": {
         "top": {
@@ -59,27 +59,31 @@
         "title": "What You'll Get",
         "col_1": {
             "title": "World-class mentorship",
-            "content": "from AI researchers/engineers at leading companies"
+            "content": "From AI researchers and engineers at leading companies."
         },
         "col_2": {
             "title": "Hands-on capstone",
-            "content": "with industry-graded code repo, short paper, and public presentation"
+            "content": "With industry-graded code repo, short paper, and public presentation."
         },
         "col_3": {
             "title": "Direct pipelines into R&D roles",
-            "content": "Potential internships or job opportunities at partner organizations"
+            "content": "Potential internships or job opportunities at partner organizations."
         },
         "col_4": {
             "title": "Research acceleration opportunities",
-            "content": "at global labs"
+            "content": "At global labs."
         },
         "col_5": {
             "title": "Leadership growth",
-            "content": "through weekly communication, influence, and self-management workshops"
+            "content": "Through weekly communication, influence, and self-management workshops."
         },
         "col_6": {
+            "title": "In-person meetups",
+            "content": "Cohort meetups at Google DeepMind (Mountain View and Palo Alto), plus Singapore, Hanoi, Ho Chi Minh City and Da Nang."
+        },
+        "col_7": {
             "title": "Lifetime alumni network",
-            "content": "with ongoing mentorship and collaboration channels"
+            "content": "With ongoing mentorship and collaboration channels, inside NTI's AI community of 30,000+ members across nine countries."
         }
     },
     "challenges": {

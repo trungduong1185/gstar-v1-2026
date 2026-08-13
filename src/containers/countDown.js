@@ -1,161 +1,74 @@
 import '../css/tachyons.min.css';
 import '../css/styles.css';
 import Countdown from 'react-countdown';
-import { countdown } from '../assets/data.json';
-import ApplyButton from '../components/ApplyButton';
-// import { register_link as registerLink } from '../assets/data.json';
+import { countdown, register_link as registerLink } from '../assets/data.json';
+
+const pad = (n) => String(n).padStart(2, '0');
 
 const HtmlCountDown = ({ d, h, m, s }) => (
-  <>
-    <div
-      id="mobile-count-down"
-      className="flex dn-l vh-100 cover white flex-column items-center justify-center bg-center"
-      // style={{ backgroundImage: 'url(images/mb_background.png)' }}
-      style={{ backgroundImage: 'url(images/bg_nti_ai_bootcamp.png)' }}
-    >
-      <div id="_mb-group-count-down" className="flex justify-center items-end">
-        {/* <!--  days --> */}
-        <div
-          id="_khoi_vuong_1"
-          className="flex flex-column justify-center items-center"
-        >
-          <div className="f6 fw3 db mb2">DAYS</div>
-          <div className="khoiVuong w3 h3 f25 fw4 flex justify-center items-center">
-            {d}
-          </div>
-        </div>
+  <section
+    className="hero-2026"
+    style={{
+      backgroundImage:
+        "linear-gradient(rgba(5, 5, 10, 0.72), rgba(5, 5, 10, 0.82)), url('images/bg_nti_ai_bootcamp.webp')",
+    }}
+  >
+    <div className="hero-2026-inner">
+      <div className="hero-eyebrow">NTI Global Talent Program 2026</div>
 
-        <span className="f2 fw6 ph2 mb3">:</span>
+      <h1 className="hero-title">GStar Bootcamp</h1>
 
-        {/* <!--  hours --> */}
-        <div
-          id="_khoi_vuong_1"
-          className="flex flex-column justify-center items-center"
-        >
-          <div className="f6 fw3 db mb2">HOURS</div>
-          <div className="khoiVuong w3 h3 f25 fw4 flex justify-center items-center">
-            {h}
-          </div>
-        </div>
-
-        <span className="f2 fw6 ph2 mb3">:</span>
-
-        {/* <!--  minutes --> */}
-        <div
-          id="_khoi_vuong_1"
-          className="flex flex-column justify-center items-center"
-        >
-          <div className="f6 fw3 db mb2">MINUTES</div>
-          <div className="khoiVuong w3 h3 f25 fw4 flex justify-center items-center">
-            {m}
-          </div>
-        </div>
-
-        <span className="f2 fw6 ph2 mb3">:</span>
-
-        {/* <!--  seconds --> */}
-        <div
-          id="_khoi_vuong_1"
-          className="flex flex-column justify-center items-center"
-        >
-          <div className="f6 fw3 db mb2">SECONDS</div>
-          <div className="khoiVuong w3 h3 f25 fw4 flex justify-center items-center">
-            {s}
-          </div>
-        </div>
+      <div className="hero-subtitle">
+        Empowering future AI leaders in Asia-Pacific and beyond.
       </div>
 
-      <p className="tc f2 fw7 center w-90 mt4">
-      GStar Bootcamp  
-      <br />
-                NTI Global Talent Program 2026
+      <p className="hero-desc">
+        A 12-week, fully online accelerator that equips emerging AI talents with
+        cutting-edge technical expertise and leadership skills, culminating in a
+        showcase at Demo Day and the GStar Summit.
       </p>
 
-      <div className="tc pc-info tracked f6 w-90 center lh-title pt4">
-        {/* The First AI Bootcamp supported by <b>Global AI Expert Network</b> with
-        <br />
-        <b>Personalized AI Assessment</b> for{' '}
-        <b>Aspiring Startups in Vietnam</b> */}
-        Empowering future AI leaders in Asia-Pacific and beyond.
-        <br />
-        A 12-week, fully online accelerator that equips emerging AI talents with cutting-edge technical expertise and leadership skills - culminating in a showcase at our GenAI Summit 2026
-
-      </div>
-    </div>
-
-    {/* <!-- desktop countdown --> */}
-    <div
-      id="desktop-count-down"
-      className="dn dn-m flex-l w-100 bg-black-20 vh-100 items-center justify-around cover"
-      style={{ backgroundImage: "url('images/bg_nti_ai_bootcamp.webp')", backgroundPosition: 'center' }}
-    >
-      <div className="flex flex-column relative">
-        {/* <img
-          src="images/a-star-icon.png"
-          alt=""
-          className="astar absolute "
-        /> */}
-
-        <div className="flex flex-column countdown-title pc-white tracked tc mt4">
-          <p className="fw7">GStar Bootcamp</p>
-          <p className="fw7">
-            NTI Global Talent Program 2026
-          </p>
+      <div className="hero-countdown-old flex flex-wrap justify-center items-center mt4 pc-white-title">
+        <div className="khoiVuong flex justify-center items-center flex-column">
+          <p className="ttu">DAYS</p>
+          <p className="soTo">{d}</p>
         </div>
-        <div className="tc countdown-subdetail tracked center w-70">
-          {/* The First AI Bootcamp supported by <b>Global AI Expert Network</b>{' '}
-          with
-          <br />
-          <b>Personalized AI Assessment</b> for{' '}
-          <b>Aspiring Startups in Vietnam</b> */}
-         Empowering future AI leaders in Asia-Pacific and beyond.
-          <br />
-          A 12-week, fully online accelerator that equips emerging AI talents with cutting-edge technical expertise and leadership skills - culminating in a showcase at our GenAI Summit 2026
-
+        <p className="soTo ph3">:</p>
+        <div className="khoiVuong flex justify-center items-center flex-column">
+          <p className="ttu">HOURS</p>
+          <p className="soTo">{pad(h)}</p>
         </div>
-
-        <div className="dn flex-ns pv2 justify-center items-center mt4 pc-white-title">
-          <div className="khoiVuong flex justify-center items-center flex-column">
-            <p className="ttu">DAYS</p>
-            <p className="soTo">{d}</p>
-          </div>
-
-          <p className="soTo ph3">:</p>
-          <div className="khoiVuong flex justify-center items-center flex-column">
-            <p className="ttu">HOURS</p>
-            <p className="soTo">{h}</p>
-          </div>
-
-          <p className="soTo ph3">:</p>
-          <div className="khoiVuong flex justify-center items-center flex-column">
-            <p className="ttu">MINUTES</p>
-            <p className="soTo">{m}</p>
-          </div>
-
-          <p className="soTo ph3">:</p>
-          <div className="khoiVuong flex justify-center items-center flex-column">
-            <p className="ttu">SECONDS</p>
-            <p className="soTo">{s}</p>
-          </div>
+        <p className="soTo ph3">:</p>
+        <div className="khoiVuong flex justify-center items-center flex-column">
+          <p className="ttu">MINUTES</p>
+          <p className="soTo">{pad(m)}</p>
         </div>
-
-        <div className="dn db-l w-100 tc" style={{flexDirection: 'column'}}>
-          <ApplyButton />
-          <p style={{color: 'white', marginTop: 16}}>*Deadline: {countdown.deadline}</p>
+        <p className="soTo ph3">:</p>
+        <div className="khoiVuong flex justify-center items-center flex-column">
+          <p className="ttu">SECONDS</p>
+          <p className="soTo">{pad(s)}</p>
         </div>
       </div>
+
+      <div className="w-100 tc hero-cta-old" style={{ flexDirection: 'column' }}>
+        <div
+          className="btnApply dib ph6 pv3 br3 fw7 f4 pointer dim mt4"
+          onClick={() => window.open(registerLink, '_blank')}
+        >
+          APPLY NOW
+        </div>
+        <p style={{ color: 'white', marginTop: 16 }}>*Deadline: {countdown.deadline}</p>
+      </div>
     </div>
-  </>
+  </section>
 );
 
 const MainCountDown = () => {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
-    // console.log('s = ', seconds);
     if (completed) {
       return <HtmlCountDown d={0} h={0} m={0} s={0} />;
-    } else {
-      return <HtmlCountDown d={days} h={hours} m={minutes} s={seconds} />;
     }
+    return <HtmlCountDown d={days} h={hours} m={minutes} s={seconds} />;
   };
 
   return (
@@ -167,4 +80,5 @@ const MainCountDown = () => {
     />
   );
 };
+
 export default MainCountDown;

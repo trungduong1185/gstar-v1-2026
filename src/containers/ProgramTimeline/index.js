@@ -3,62 +3,66 @@ import '../../css/tachyons.min.css';
 import '../../css/styles.css';
 import './styles.css';
 
-const ProgramTimeline = ({ id }) => {
-  const timelineData = [
-    {
-      month: '1 July - 10 August',
-      title: 'Recruitment',
-      description: ['<b>Jul 25:</b> Early Bird deadline', '<b>Aug 10:</b> Final deadline to apply', 'Entrance test & final evaluation on a rolling basis (instructions by email)'],
-      position: 'left'
-    },
-    {
-      month: 'Early September - December 2026',
-      title: 'Official Program',
-      description: '12-week intensive training and project development',
-      position: 'center'
-    },
-    {
-      month: 'December 2026 - 2027',
-      title: 'Presentation at GenAI Summit',
-      description: 'Showcase your capstone project to industry leaders',
-      position: 'right'
-    }
-  ];
+const timelineData = [
+  {
+    period: 'July – August 2026',
+    title: 'Recruitment',
+    items: [
+      'August 10: Early-bird deadline to apply',
+      'Entrance test for selected candidates',
+      'Final evaluation',
+    ],
+    active: true,
+  },
+  {
+    period: 'Sept – Dec 2026',
+    title: 'Official Program',
+    description: '12-week intensive training and project development, fully online.',
+    active: false,
+  },
+  {
+    period: 'December 2026',
+    title: 'Demo Day',
+    description: 'Final capstone presentations to the panel of lecturers, mentors and partners.',
+    active: false,
+  },
+  {
+    period: '2027',
+    title: 'Presentation at GStar Summit',
+    description: 'Top teams showcase their capstone to industry leaders, hiring partners and investors.',
+    active: false,
+  },
+];
 
-  return (
-    <section id={id} className="block-pt-pb bg-white">
-      <div className="container center">
-        <h2 className="f2 fw7 tc mb4 w-100 f2 fw7 ttu ph2 pl0 pr5-l pc-what-title tc tracked-l">Program Timeline</h2>
-        
-        <div className="timeline-container">
-          {/* Timeline Line */}
-          <div className="timeline-line"></div>
-          
-          {/* Timeline Items */}
-          <div className="timeline-items">
-            {timelineData.map((item, index) => (
-              <div key={index} className={`timeline-item timeline-item-${item.position}`}>
-                <div className="timeline-node"></div>
-                <div className="timeline-content">
-                  <div className="timeline-month red f4 fw6 ttu tracked">{item.month}</div>
-                  <h3 className="timeline-title f3 fw7 mb2">{item.title}</h3>
-                                     <div className="timeline-description f5 gray lh-copy">
-                     {Array.isArray(item.description) ? (
-                       item.description.map((line, lineIndex) => (
-                         <div key={lineIndex} dangerouslySetInnerHTML={{ __html: line }}></div>
-                       ))
-                     ) : (
-                       <div dangerouslySetInnerHTML={{ __html: item.description }}></div>
-                     )}
-                   </div>
-                </div>
-              </div>
-            ))}
+const ProgramTimeline = ({ id }) => (
+  <section id={id} className="pt-block bg-white">
+    <div className="container center">
+      <h2 className="pt-heading">Program Timeline</h2>
+
+      <div className="pt-grid">
+        {timelineData.map((item, i) => (
+          <div key={i} className={`pt-col${item.active ? ' pt-col--active' : ''}`}>
+            <div className="pt-period">{item.period}</div>
+            <div className="pt-title">{item.title}</div>
+            {item.items ? (
+              <ul className="pt-list">
+                {item.items.map((li, j) => (
+                  <li key={j}>{li}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="pt-desc">{item.description}</p>
+            )}
           </div>
-        </div>
+        ))}
       </div>
-    </section>
-  );
-};
 
-export default ProgramTimeline; 
+      <div className="pt-cta">
+        <a href="#apply" className="pt-btn">Apply Now</a>
+        <div className="pt-deadline">Deadline: August 23, 2026, Indochina Time</div>
+      </div>
+    </div>
+  </section>
+);
+
+export default ProgramTimeline;

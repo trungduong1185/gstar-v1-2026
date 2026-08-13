@@ -1,21 +1,50 @@
 /* Vision Grid */
 .vision-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 32px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 56px 44px;
+  padding: 0 20px;
 }
 
-/* Tablet */
-@media (min-width: 768px) {
-  .vision-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.vision-item {
+  width: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Desktop */
-@media (min-width: 1024px) {
-  .vision-grid {
-    grid-template-columns: repeat(3, 1fr);
+.vision-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #f6eeee;
+  color: #731013;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.vision-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #731013;
+  margin-bottom: 10px;
+  line-height: normal;
+}
+
+.vision-desc {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: #4b5361;
+}
+
+@media (max-width: 360px) {
+  .vision-item {
+    width: 100%;
   }
-} 
+}

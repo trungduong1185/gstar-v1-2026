@@ -1,0 +1,241 @@
+/* ── CohortProjects ───────────────────────────────────────────── */
+
+.cp-section {
+  background: #fff;
+  padding: 104px 32px;
+}
+
+/* Eyebrow */
+.cp-eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #731013;
+}
+
+/* Heading */
+.cp-h2 {
+  margin-top: 22px;
+  max-width: 780px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343741;
+  line-height: 1.2;
+}
+
+/* ── Filter buttons ────────────────────────────────────────────── */
+
+.cp-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 36px;
+}
+
+.cp-filter-btn {
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 1.5px solid #d1d5db;
+  background: transparent;
+  color: #4b5361;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 140ms ease, background 140ms ease, color 140ms ease;
+  font-family: inherit;
+}
+
+.cp-filter-btn:hover {
+  border-color: #731013;
+  color: #731013;
+}
+
+.cp-filter-btn--active {
+  background: #731013;
+  border-color: #731013;
+  color: #fff;
+}
+
+.cp-filter-btn--active:hover {
+  background: #5a0d0f;
+  border-color: #5a0d0f;
+  color: #fff;
+}
+
+/* ── Project grid ──────────────────────────────────────────────── */
+
+.cp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+/* ── Project card ──────────────────────────────────────────────── */
+
+.cp-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 160ms ease;
+}
+
+.cp-card:hover {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.cp-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.cp-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Tag */
+.cp-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #731013;
+  background: #f6eeee;
+  border-radius: 4px;
+  padding: 3px 8px;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+
+/* Card title */
+.cp-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #343741;
+  margin: 0 0 10px;
+}
+
+/* Card description */
+.cp-card-desc {
+  font-size: 0.9375rem;
+  color: #4b5361;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+/* Definition list */
+.cp-dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin: 0 0 20px;
+  padding: 14px 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cp-dl div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cp-dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.cp-dd {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #343741;
+  margin: 0;
+}
+
+/* Expand toggle */
+.cp-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #731013;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: auto;
+}
+
+.cp-toggle:hover {
+  color: #5a0d0f;
+}
+
+.cp-toggle-icon {
+  font-size: 1rem;
+  line-height: 1;
+  transition: transform 200ms ease;
+}
+
+.cp-toggle-icon--open {
+  transform: rotate(45deg);
+}
+
+/* Detail panel */
+.cp-detail {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 280ms ease, padding-top 280ms ease;
+}
+
+.cp-detail--open {
+  max-height: 300px;
+  padding-top: 12px;
+}
+
+.cp-detail p {
+  font-size: 0.875rem;
+  color: #4b5361;
+  line-height: 1.65;
+  margin: 0;
+  padding: 14px;
+  background: #fafafa;
+  border-radius: 6px;
+  border: 1px solid #f0f0f0;
+}
+
+/* ── Mobile ────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .cp-section {
+    padding: 64px 20px;
+  }
+
+  .cp-h2 {
+    font-size: 1.5rem;
+  }
+
+  .cp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

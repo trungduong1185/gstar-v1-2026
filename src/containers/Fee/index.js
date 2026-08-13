@@ -12,24 +12,25 @@ const Fee = ({ id }) => {
                     
                 </div>
                 {/* Official Tuition Fee Section */}
-                <div className="bg-white scholarship-box br3 pa5 pb4">
-                    <div className="tc">
-                    <h2 className="f2 f2-l fw7 pc-red ttu tracked-l flex justify-center">
-                        <span className="pc-black">Scholarships Available</span>
+                <div className="scholarship-box tc">
+                    <h2 className="f2 fw7 ttu tracked-l pc-black mb2">
+                        Scholarships Available
                     </h2>
-                        <div className="f1 fw7 pc-red mb2">Up to 100% Coverage</div>
-                        <p className="f5 pc-dark-gray mb4">
-                        We charge a tuition fee for this bootcamp and are committed to making high-quality AI education accessible through merit-based scholarships.
-                        </p>
-                        <a 
-                            href={data.register_link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-pc-red pc-near-white dib ph4 pv3 br3 fw7 f4 pointer dim no-underline"
-                        >
-                            APPLY NOW
-                        </a>
+                    <div className="f1 fw7 pc-red mb3" style={{ lineHeight: 1.15 }}>
+                        Up to 100% coverage
                     </div>
+                    <p className="f5 pc-dark-gray mb4 center" style={{ maxWidth: '640px' }}>
+                        We charge a tuition fee for this bootcamp and are committed to making high-quality AI education accessible through merit-based scholarships.
+                    </p>
+                    <a
+                        href={data.register_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-pc-red pc-near-white dib ph5 pv3 fw7 f5 ttu pointer no-underline"
+                        style={{ borderRadius: '8px', letterSpacing: '0.12em' }}
+                    >
+                        Apply Now
+                    </a>
                 </div>
                                 
 
@@ -54,7 +55,12 @@ const Fee = ({ id }) => {
                     {/* Important Note */}
                     <div className="bg-red-5 pa3 br3">
                         <div className="flex items-center">
-                            <span className="f4 mr2">🔔</span>
+                            <span className="mr2" style={{display:'inline-flex', alignItems:'center', justifyContent:'center', flexShrink:0, color:'#731013'}}>
+                              <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                                <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+                              </svg>
+                            </span>
                             <p className="f6 ma0">
                                 Applicants who meet multiple criteria will be prioritized during the scholarship review process. 
                                 Final results will be sent directly to your registered email.

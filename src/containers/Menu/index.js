@@ -140,7 +140,8 @@ const Menu = () => {
               APPLY NOW
             </div> */}
             <div
-              className="bg-pc-red pc-white ml4 ph4 pv3 br3 fw6 f5 pointer dim btnApply"
+              className="bg-pc-red pc-white ml4 br3 fw6 pointer dim btnApply"
+              style={{ padding: '12px 24px', fontSize: '13px' }}
               onClick={() => window.open(registerLink, '_blank')}
             >
               APPLY NOW

@@ -4,6 +4,21 @@
 
 
 
+.about-pill {
+  border: 1px solid #731013;
+  color: #731013;
+  background: #f6eeee;
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 160ms ease;
+}
+.about-pill:hover {
+  background: #efdede;
+}
+
 .about-image {
   transition: transform 0.3s ease;
 }

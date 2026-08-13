@@ -1,140 +1,131 @@
-.timeline-container {
-  position: relative;
-  padding: 20px 0;
-  margin: 0 auto;
+/* ── Program Timeline ─────────────────────────────────────────── */
+
+.pt-block {
+  padding: 104px 32px;
+  background: linear-gradient(to right, #FAF9FB, #eef2f3);
 }
 
-.timeline-line {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: #731013;
-  transform: translateY(-50%);
-  z-index: 1;
+.pt-heading {
+  margin: 0 0 56px;
+  text-align: center;
+  font-size: 2.125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #731013;
 }
 
-.timeline-items {
-  position: relative;
+/* 4-column grid */
+.pt-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.pt-col {
+  border-top: 3px solid #bfc2c9;
+  padding-top: 22px;
+}
+
+.pt-col--active {
+  border-top-color: #731013;
+}
+
+/* Period label */
+.pt-period {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #5b5d66;
+  margin-bottom: 10px;
+}
+
+.pt-col--active .pt-period {
+  color: #731013;
+}
+
+/* Title */
+.pt-title {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: #343741;
+  margin-bottom: 12px;
+}
+
+/* List (Recruitment) */
+.pt-list {
+  margin: 0;
+  padding-left: 18px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: #4b5361;
 }
 
-.timeline-item {
-  flex: 1;
+/* Paragraph */
+.pt-desc {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: #4b5361;
+}
+
+/* CTA */
+.pt-cta {
+  margin-top: 56px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  gap: 14px;
 }
 
-.timeline-node {
-  width: 20px;
-  height: 20px;
+.pt-btn {
+  display: inline-block;
   background: #731013;
-  border-radius: 50%;
-  border: 4px solid white;
-  box-shadow: 0 0 0 4px #731013;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-}
-
-.timeline-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* Left and Right items - above timeline */
-.timeline-item-left .timeline-content,
-.timeline-item-right .timeline-content {
-  margin-bottom: 192px;
-}
-
-/* Center item - below timeline */
-.timeline-item-center .timeline-content {
-  margin-top: 148px;
-}
-
-.timeline-month {
-  margin-bottom: 8px;
-  color: #731013;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.timeline-title {
-  color: #333;
-  margin-bottom: 8px;
+  color: #fff;
   font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 17px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 160ms ease;
 }
 
-.timeline-description {
-  color: #666;
-  line-height: 1.5;
-  font-size: 14px;
+.pt-btn:hover {
+  background: #5a0d0f;
+  color: #fff;
 }
 
-/* Mobile Layout - Vertical Timeline */
+.pt-deadline {
+  font-size: 0.875rem;
+  color: #656e7c;
+}
+
+/* ── Mobile ───────────────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .timeline-container {
-    padding: 0px 24px;
-    margin-bottom: 0;
-    margin-top: 0;
+  .pt-block {
+    padding: 64px 20px;
   }
-  
-  .timeline-line {
-    left:24px;
-    right: auto;
-    width: 4px;
-    height: 100%;
-    top: 0;
-    transform: none;
+
+  .pt-heading {
+    font-size: 1.5rem;
+    margin-bottom: 36px;
   }
-  
-  .timeline-items {
-    flex-direction: column;
-    align-items: flex-start;
+
+  .pt-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
-  
-  .timeline-item {
-    flex-direction: row;
-    align-items: flex-start;
-    margin-bottom: 0;
-    width: 100%;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pt-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
-  
-  .timeline-node {
-    left: -8px;
-    top: 20px;
-    transform: none;
-  }
-  
-  .timeline-content {
-    margin: 0 0 0 20px;
-    max-width: 100%;
-    text-align: left;
-    flex: 1;
-  }
-  
-  .timeline-month,
-  .timeline-title,
-  .timeline-description {
-    text-align: left;
-  }
-  .timeline-item-left .timeline-content, .timeline-item-right .timeline-content{
-    margin-bottom: 0 !important;
-    margin-top: 0 !important;
-    padding-bottom: 0px;
-  }
-  .timeline-item-center .timeline-content{
-    margin-top: 0 !important;
-  }
-} 
+}

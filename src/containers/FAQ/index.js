@@ -8,6 +8,10 @@ const FAQ = () => {
 
   const faqData = [
     {
+      question: "Who is this program for? Am I qualified?",
+      answer: "You do not need a PhD or a job at a frontier lab. You need fluency in Python and PyTorch and comfort reading a research paper, the ability to follow or implement a Transformer end to end (attention, backprop, the training loop), experience training or fine-tuning a model even a small one, and working knowledge of deep learning, NLP and LLMs. If you meet most of these, take the entrance test."
+    },
+    {
       question: "I've graduated but am still waiting to receive my diploma. Am I eligible to apply?",
       answer: "Yes, you are eligible. As long as you have completed your degree requirements and can demonstrate relevant background in AI/ML, you may apply."
     },
@@ -30,6 +34,10 @@ const FAQ = () => {
     {
       question: "When and how will I be notified of admission decisions?",
       answer: "Outcomes announced via email by early-August 2026. Accepted applicants receive next-step instructions and onboarding details in the same notification."
+    },
+    {
+      question: "Is financial aid available?",
+      answer: "Yes. We offer merit-based scholarships covering up to 100% of tuition. Criteria include demonstrated academic excellence or research achievements, strong performance in the technical assessment, personal or family hardship, and clear motivation aligned with the program's mission."
     },
     {
       question: "What language will the program be conducted in?",
