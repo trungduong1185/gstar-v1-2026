@@ -2,6 +2,7 @@ import '../../css/tachyons.min.css';
 import '../../css/styles.css';
 import { useState } from 'react';
 import useMediaQuery from '../../hooks/useMediaQuery';
+import { register_link as registerLink } from '../../assets/data.json';
 
 const What = ({ id }) => {
   const [selectedId, setSelectedId] = useState(1);
@@ -241,7 +242,9 @@ const What = ({ id }) => {
             <div className="w-100 flex justify-end pv4 mt3">
               <div className="w-80 tc">
                 <a
-                  href="#apply"
+                  href={registerLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="dib fw7 ttu tracked"
                   style={{
                     background: '#731013',

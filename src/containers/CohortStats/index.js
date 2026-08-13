@@ -41,10 +41,6 @@ const CohortStats = () => (
         ))}
       </div>
 
-      <p className="cs-source">
-        Source: GStar Cohort 1 program records. Organization and employer names describe cohort representation, not sponsorship.
-      </p>
-
       <p className="cs-lead">
         Every Cohort 1 project was mentored, graded, and ranked — and reputable start-up accelerators showed immediate interest in the top 3.
       </p>

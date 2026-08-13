@@ -2,6 +2,7 @@ import React from 'react';
 import '../../css/tachyons.min.css';
 import '../../css/styles.css';
 import './styles.css';
+import { register_link as registerLink } from '../../assets/data.json';
 
 const timelineData = [
   {
@@ -58,7 +59,7 @@ const ProgramTimeline = ({ id }) => (
       </div>
 
       <div className="pt-cta">
-        <a href="#apply" className="pt-btn">Apply Now</a>
+        <a href={registerLink} target="_blank" rel="noopener noreferrer" className="pt-btn">Apply Now</a>
         <div className="pt-deadline">Deadline: August 23, 2026, Indochina Time</div>
       </div>
     </div>
