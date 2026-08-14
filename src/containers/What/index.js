@@ -233,8 +233,6 @@ const What = ({ id }) => {
               </div>
               <div className="w-80 yellow-week-box bg-pc-red ttu pc-white tc">
                 <span className='f3 fw7'>Demo Day: final project presentation</span>
-                <br />
-                (later followed by a blog post or camera-ready write-up published on Medium, Hugging Face and the NTI website)
               </div>
             </div>
 
