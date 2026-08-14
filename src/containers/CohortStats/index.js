@@ -57,7 +57,7 @@ const CohortStats = () => {
           The bar GStar 2026 is built on.
         </p>
         <h2 className="f2 fw7 ttu tracked-l tc mb0" style={{ color: '#ffffff' }}>
-          Cohort 1 — By the Numbers
+          Cohort 2025 — By the Numbers
         </h2>
 
         <div className="cs-stats" ref={statsRef}>
