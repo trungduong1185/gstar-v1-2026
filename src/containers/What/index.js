@@ -149,7 +149,8 @@ const What = ({ id }) => {
                 display: 'grid',
                 gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr',
                 gridTemplateRows: 'auto auto',
-                gap: '12px',
+                rowGap: '12px',
+                columnGap: 0,
               }}
             >
               {/* Week 7 label */}
@@ -177,7 +178,7 @@ const What = ({ id }) => {
               {/* Team Project — spans rows 1–2 */}
               <div
                 className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`}
-                style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 2' }}
+                style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 2', marginLeft: isMobile ? 0 : '12px' }}
               >
                 <span className="b">Team Project refinement</span>
                 <br />
