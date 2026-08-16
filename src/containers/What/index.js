@@ -143,48 +143,66 @@ const What = ({ id }) => {
             </div>
 
             {/* Week 7–8 */}
-            <div className="w-100 flex justify-end pv2">
-              <div className="w-20 tc fw5 flex flex-wrap">
-                <div className="w-100 h3">Week 7</div>
-                <div className="w-100 h3 mt3">Week 8</div>
+            <div
+              className="w-100 pv2"
+              style={{
+                display: 'grid',
+                gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr',
+                gridTemplateRows: 'auto auto',
+                gap: '12px',
+              }}
+            >
+              {/* Week 7 label */}
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                Week 7
               </div>
-              <div className="w-80 flex">
-                <div className={toggleCol_1 + 'flex-l flex-wrap mr2-l'}>
-                  <div className="w-100 green-week-box tc d-flex align-items flex-column">
-                    <div style={{display:'flex', alignItems:'center', gap:'8px', flexWrap:'wrap', marginBottom:'8px', justifyContent:'center'}}>
-                      <span className="b">Agents and evaluation</span>
-                      <span style={{background:'#f6eeee', color:'#731013', border:'1px solid #f0d0d1', borderRadius:'999px', fontSize:'0.6rem', fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase', padding:'3px 10px'}}>EXPANDED FOR 2026</span>
-                    </div>
-                    <ul className='ul-list-conent' style={{textAlign:'left'}}>
-                      <li>Computer use agents (CUA)</li>
-                      <li>Coding agents and autonomous engineering workflows</li>
-                      <li>Multi-agent systems: coordination, roles, division of labor</li>
-                      <li>Harness, orchestration and the Harmony framework</li>
-                      <li>Evolutionary algorithms for agent optimization</li>
-                      <li>Evaluation: automated benchmarks (BLEURT, COMET) and LLM-as-judge</li>
-                    </ul>
-                  </div>
-                  <div className="w-100 green-week-box tc d-flex mt3 align-items flex-column">
-                    <span className="b">Advanced inference</span>
-                    <br />
-                    Goal: kv-caching, advanced and speculative decoding, Triton, serving optimizations, FLOPS and GPU utilization.
-                  </div>
+              {/* Agents block */}
+              <div
+                className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`}
+                style={{ gridColumn: 2, gridRow: 1 }}
+              >
+                <div style={{display:'flex', alignItems:'center', gap:'8px', flexWrap:'wrap', marginBottom:'8px', justifyContent:'center'}}>
+                  <span className="b">Agents and evaluation</span>
+                  <span style={{background:'#f6eeee', color:'#731013', border:'1px solid #f0d0d1', borderRadius:'999px', fontSize:'0.6rem', fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase', padding:'3px 10px'}}>EXPANDED FOR 2026</span>
                 </div>
-                <div className={toggleCol_2 + 'flex-l flex-wrap ml2-l'}>
-                  <div className={'pink-week-box tc'}>
-                    <span className="b">Team Project refinement</span>
-                    <br />
-                    Goal: refine the idea and implementation based on feedback of the prototype.
-                    <br />
-                    Deliverables:
-                    <ul className='ul-list-conent'>
-                      <li>project mid-term report (2–4 pages) on the latest results</li>
-                      <li>initial code submission</li>
-                    </ul>
-                    <br />
-                    To be reviewed by technical buddies &amp; program leads.
-                  </div>
-                </div>
+                <ul className='ul-list-conent' style={{textAlign:'left'}}>
+                  <li>Computer use agents (CUA)</li>
+                  <li>Coding agents and autonomous engineering workflows</li>
+                  <li>Multi-agent systems: coordination, roles, division of labor</li>
+                  <li>Harness, orchestration and the Harmony framework</li>
+                  <li>Evolutionary algorithms for agent optimization</li>
+                  <li>Evaluation: automated benchmarks (BLEURT, COMET) and LLM-as-judge</li>
+                </ul>
+              </div>
+              {/* Team Project — spans rows 1–2 */}
+              <div
+                className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`}
+                style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 2' }}
+              >
+                <span className="b">Team Project refinement</span>
+                <br />
+                Goal: refine the idea and implementation based on feedback of the prototype.
+                <br />
+                Deliverables:
+                <ul className='ul-list-conent'>
+                  <li>project mid-term report (2–4 pages) on the latest results</li>
+                  <li>initial code submission</li>
+                </ul>
+                <br />
+                To be reviewed by technical buddies &amp; program leads.
+              </div>
+              {/* Week 8 label */}
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                Week 8
+              </div>
+              {/* Advanced inference block */}
+              <div
+                className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`}
+                style={{ gridColumn: 2, gridRow: 2 }}
+              >
+                <span className="b">Advanced inference</span>
+                <br />
+                Goal: kv-caching, advanced and speculative decoding, Triton, serving optimizations, FLOPS and GPU utilization.
               </div>
             </div>
 
