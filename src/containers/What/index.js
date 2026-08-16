@@ -58,75 +58,59 @@ const What = ({ id }) => {
             </div>
           </div>
 
-          <div className='w-90 center'>
+          <div className={isMobile ? 'w-100' : 'w-90 center'}>
 
             {/* Week 1–2 */}
-            <div className="w-100 flex justify-end pv2">
-              <div className="w-20 tc fw5 flex flex-wrap">
-                <div className={`w-100 ${isMobile ? ' h2 mt1' : 'h2'}`}>Week 1</div>
-                <div className={`w-100 ${isMobile ? ' h2 mt1' : 'h4'}`}>Week 2</div>
+            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto', rowGap: '12px', columnGap: 0 }}>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 1</div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Review of advanced NLP techniques</span>
+                <br />
+                Goal: recap fundamental knowledge such as attention, tokenization, Transformer, and end-to-end training.
               </div>
-              <div className="w-80 flex">
-                <div className={toggleCol_1 + 'flex-l flex-wrap mr2-l'}>
-                  <div className="w-100 green-week-box tc d-flex align-items flex-column">
-                    <span className="b">Review of advanced NLP techniques</span>
-                    <br />
-                    Goal: recap fundamental knowledge such as attention, tokenization, Transformer, and end-to-end training.
-                  </div>
-                  <div className="w-100 green-week-box tc mt3 d-flex align-items flex-column">
-                    <span className="b">Pre-training</span>
-                    <br />
-                    Goal: develop in-depth understanding of attention (Linear Attention, FlashAttention), advanced Transformers (Sparse Transformer, Transformer-XL, MoE), hybrid architectures (Mamba), and LLM pretraining.
-                    <br />
-                    Tutorial: train a large language model from scratch.
-                    <br />
-                    Assignment 1 (weeks 1–2): optimizer state sharding.
-                  </div>
-                </div>
-                <div className={toggleCol_2 + 'flex-l flex-wrap ml2-l'}>
-                  <div className={'pink-week-box tc'}>
-                    <span className="b">Individual Project brainstorming</span>
-                    <br />
-                    Goal: think critically about interesting and impactful ideas that can be achieved in 12 weeks.
-                    <br />
-                    Deliverables: project proposal (2–4 pages) to be reviewed by technical buddies &amp; program leads.
-                  </div>
-                </div>
+              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 2', marginLeft: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Individual Project brainstorming</span>
+                <br />
+                Goal: think critically about interesting and impactful ideas that can be achieved in 12 weeks.
+                <br />
+                Deliverables: project proposal (2–4 pages) to be reviewed by technical buddies &amp; program leads.
+              </div>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 2</div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 2, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Pre-training</span>
+                <br />
+                Goal: develop in-depth understanding of attention (Linear Attention, FlashAttention), advanced Transformers (Sparse Transformer, Transformer-XL, MoE), hybrid architectures (Mamba), and LLM pretraining.
+                <br />
+                Tutorial: train a large language model from scratch.
+                <br />
+                Assignment 1 (weeks 1–2): optimizer state sharding.
               </div>
             </div>
 
             {/* Week 3–5 */}
-            <div className="w-100 flex justify-end pv2">
-              <div className="w-20 tc fw5 flex flex-wrap">
-                <div className={`w-100 ${isMobile ? ' h4 mt1' : 'h4'}`}>Week 3</div>
-                <div className={`w-100 ${isMobile ? ' h3' : ' h4 mt3'}`}>Week 4</div>
-                <div className={`w-100 ${isMobile ? ' h2 mt1' : 'h2'}`}>Week 5</div>
+            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto auto', rowGap: '12px', columnGap: 0 }}>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 3</div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Post-training</span>
+                <br />
+                Goal: understand supervised finetuning (SFT) and parameter-efficient methods. Learn how to prepare data, set up training, tune hyperparameters, perform decoding, and evaluate.
               </div>
-              <div className="w-80 flex">
-                <div className={toggleCol_1 + 'flex-l flex-wrap mr2-l'}>
-                  <div className="w-100 green-week-box tc d-flex align-items flex-column">
-                    <span className="b">Post-training</span>
-                    <br />
-                    Goal: understand supervised finetuning (SFT) and parameter-efficient methods. Learn how to prepare data, set up training, tune hyperparameters, perform decoding, and evaluate.
-                  </div>
-                  <div className="w-100 green-week-box tc d-flex mt3 align-items flex-column">
-                    <span className="b">Alignment &amp; Advanced reasoning</span>
-                    <br />
-                    Goal: understand learning from human feedback (RLHF, DPO, SimPO) and recent developments in reasoning models (DeepSeek-R1, GRPO, RLVR), including RL for agents.
-                  </div>
-                  <div className={`w-100 green-week-box tc mt3 flex-center flex-column ${isMobile ? 'h4' : ''}`}>
-                    <span className="b">Assignment 2 (weeks 3–5): train math reasoning models with GRPO</span>
-                  </div>
-                </div>
-                <div className={toggleCol_2 + 'flex-l flex-wrap ml2-l'}>
-                  <div className={'pink-week-box tc'}>
-                    <span className="b">Individual Project prototype</span>
-                    <br />
-                    Goal: implement the first version of the project proposal utilizing knowledge learned during the first 6 weeks.
-                    <br />
-                    Deliverables: project presentation presented to technical buddies, program leads, and senior advisors.
-                  </div>
-                </div>
+              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 3', marginLeft: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Individual Project prototype</span>
+                <br />
+                Goal: implement the first version of the project proposal utilizing knowledge learned during the first 6 weeks.
+                <br />
+                Deliverables: project presentation presented to technical buddies, program leads, and senior advisors.
+              </div>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 4</div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 2, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Alignment &amp; Advanced reasoning</span>
+                <br />
+                Goal: understand learning from human feedback (RLHF, DPO, SimPO) and recent developments in reasoning models (DeepSeek-R1, GRPO, RLVR), including RL for agents.
+              </div>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 3, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 5</div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 3, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Assignment 2 (weeks 3–5): train math reasoning models with GRPO</span>
               </div>
             </div>
 
@@ -208,40 +192,32 @@ const What = ({ id }) => {
             </div>
 
             {/* Week 9–11 */}
-            <div className="w-100 flex justify-end pv2">
-              <div className="w-20 tc fw5 flex flex-wrap">
-                <div className="w-100 h3">Week 9</div>
-                <div className="w-100 h3 mt3">Week 10</div>
-                <div className="w-100 h3">Week 11</div>
+            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto auto', rowGap: '12px', columnGap: 0 }}>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 9</div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Guest lectures</span>
               </div>
-              <div className="w-80 flex">
-                <div className={toggleCol_1 + 'flex-l flex-wrap mr2-l'}>
-                  <div className="w-100 green-week-box tc d-flex align-items flex-column">
-                    <span className="b">Guest lectures</span>
-                  </div>
-                  <div className="w-100 green-week-box tc d-flex mt3 align-items flex-column">
-                    <span className="b">Guest lectures</span>
-                  </div>
-                  <div className={`w-100 green-week-box tc mt3 flex-column ${isMobile ? 'h4' : ''}`}>
-                    <span className="b">Guest lectures</span>
-                  </div>
-                </div>
-                <div className={toggleCol_2 + 'flex-l flex-wrap ml2-l'}>
-                  <div className={'pink-week-box tc'}>
-                    <span className="b">Team Project completion</span>
-                    <br />
-                    Goal: complete the project with polished results and implementation.
-                    <br /><br />
-                    Deliverables:
-                    <ul className='ul-list-conent'>
-                      <li>final project presentation to everyone</li>
-                      <li>project final report (4–8 pages)</li>
-                      <li>final code submission</li>
-                    </ul>
-                    <br />
-                    To be graded by technical buddies &amp; program leads.
-                  </div>
-                </div>
+              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 3', marginLeft: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Team Project completion</span>
+                <br />
+                Goal: complete the project with polished results and implementation.
+                <br /><br />
+                Deliverables:
+                <ul className='ul-list-conent'>
+                  <li>final project presentation to everyone</li>
+                  <li>project final report (4–8 pages)</li>
+                  <li>final code submission</li>
+                </ul>
+                <br />
+                To be graded by technical buddies &amp; program leads.
+              </div>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 10</div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 2, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Guest lectures</span>
+              </div>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 3, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 11</div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 3, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Guest lectures</span>
               </div>
             </div>
 
