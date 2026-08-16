@@ -207,7 +207,7 @@ body.modal-open {
   gap: 12px;
 }
 .title-header-mentorship{
-  padding: 64px 24px 40px 24px ;
+  padding: 64px 15px 40px 15px ;
   font-size: 2em;
 }
 .speaker-left {
@@ -267,7 +267,7 @@ body.modal-open {
 }
 .mentors-title li{
   margin-bottom: 0.3rem;
-  font-size: 16px;
+  font-size: 14px;
 }
 }
 
