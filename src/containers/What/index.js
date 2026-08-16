@@ -160,7 +160,7 @@ const What = ({ id }) => {
               {/* Agents block */}
               <div
                 className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`}
-                style={{ gridColumn: 2, gridRow: 1 }}
+                style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '1rem' }}
               >
                 <div style={{display:'flex', alignItems:'center', gap:'8px', flexWrap:'wrap', marginBottom:'8px', justifyContent:'center'}}>
                   <span className="b">Agents and evaluation</span>
@@ -178,7 +178,7 @@ const What = ({ id }) => {
               {/* Team Project — spans rows 1–2 */}
               <div
                 className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`}
-                style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 2', marginLeft: isMobile ? 0 : '12px' }}
+                style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 2', marginLeft: isMobile ? 0 : '1rem' }}
               >
                 <span className="b">Team Project refinement</span>
                 <br />
@@ -199,7 +199,7 @@ const What = ({ id }) => {
               {/* Advanced inference block */}
               <div
                 className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`}
-                style={{ gridColumn: 2, gridRow: 2 }}
+                style={{ gridColumn: 2, gridRow: 2, marginRight: isMobile ? 0 : '1rem' }}
               >
                 <span className="b">Advanced inference</span>
                 <br />
