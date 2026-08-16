@@ -25,3 +25,9 @@
     border-radius: 16px;
     padding: 4rem 3rem;
 }
+
+@media (max-width: 768px) {
+    .scholarship-box {
+        padding: 2rem 1rem;
+    }
+}
