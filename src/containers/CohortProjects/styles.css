@@ -222,7 +222,7 @@
 
 @media (max-width: 768px) {
   .cp-section {
-    padding: 64px 20px;
+    padding: 64px 0;
   }
 
   .cp-h2 {
