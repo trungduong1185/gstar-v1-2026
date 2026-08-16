@@ -2,16 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import AppPreview from './AppPreview';
 import reportWebVitals from './reportWebVitals';
-
-const RootApp = new URLSearchParams(window.location.search).get('preview') === 'revamp'
-  ? AppPreview
-  : App;
 
 ReactDOM.render(
   <React.StrictMode>
-    <RootApp />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
