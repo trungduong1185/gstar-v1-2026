@@ -109,7 +109,7 @@
 /* ── Mobile ───────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .pt-block {
-    padding: 64px 20px;
+    padding: 64px 0;
   }
 
   .pt-heading {

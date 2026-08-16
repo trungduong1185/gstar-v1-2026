@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .why-wrap {
+    padding: 0 15px;
+  }
+
+  .why-col {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

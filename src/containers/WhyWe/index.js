@@ -1,5 +1,6 @@
 import '../../css/tachyons.min.css';
 import '../../css/styles.css';
+import './styles.css';
 import { why_we as whyWe } from '../../assets/data.json';
 import { RedApplyButton } from '../../components/ApplyButton';
 import { countdown } from '../../assets/data.json';
@@ -12,8 +13,8 @@ const WhyWe = ({ id }) => (
         {whyWe.title}
       </p>
 
-      <div className="w-container flex flex-column flex-row-l center mt3 mt4-l">
-        <div className="w-100 w-third-l pa3 flex flex-column items-center ph4 justify-start">
+      <div className="w-container why-wrap flex flex-column flex-row-l center mt3 mt4-l">
+        <div className="why-col w-100 w-third-l pa3 flex flex-column items-center ph4 justify-start">
           <div className="flex flex-column items-center">
             <img src="images/svg_pc.svg" alt="" className="pt4" />
             <p
@@ -28,7 +29,7 @@ const WhyWe = ({ id }) => (
           />
         </div>
 
-        <div className="w-100 w-third-l pa3 flex flex-column items-center ph4 justify-start">
+        <div className="why-col w-100 w-third-l pa3 flex flex-column items-center ph4 justify-start">
           <div className="flex flex-column items-center">
             <img src="images/svg_earth.svg" alt="" className="pt4" />
             <p
@@ -43,7 +44,7 @@ const WhyWe = ({ id }) => (
           />
         </div>
 
-        <div className="w-100 w-third-l pa3 flex flex-column items-center ph4 justify-start">
+        <div className="why-col w-100 w-third-l pa3 flex flex-column items-center ph4 justify-start">
           <div className="flex flex-column items-center">
             <img src="images/svg_notebook.svg" alt="" className="pt4" />
             <p
