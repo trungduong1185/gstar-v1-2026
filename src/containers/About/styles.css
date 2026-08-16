@@ -44,7 +44,7 @@
 
 @media (max-width: 768px) {
   .about-section {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
   }
   
   .about-title {
