@@ -153,7 +153,7 @@ const What = ({ id }) => {
               }}
             >
               {/* Week 7 label */}
-              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>
                 Week 7
               </div>
               {/* Agents block */}
@@ -192,7 +192,7 @@ const What = ({ id }) => {
                 To be reviewed by technical buddies &amp; program leads.
               </div>
               {/* Week 8 label */}
-              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>
                 Week 8
               </div>
               {/* Advanced inference block */}
