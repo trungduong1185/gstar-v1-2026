@@ -92,7 +92,7 @@ const What = ({ id }) => {
             <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto', rowGap: '12px', columnGap: 0 }}>
               <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 4</div>
               <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
-                <span className="b">Deepdive on Kimi 3</span>
+                <span className="b">Deepdive on Kimi K3</span>
               </div>
               <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 2', marginLeft: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Individual Project prototype</span>
@@ -107,7 +107,7 @@ const What = ({ id }) => {
                 <br />
                 Goal: understand learning from human feedback (RLHF, DPO) and recent developments for advanced reasoning models (DeepSeek-R1 and GRPO).
                 <br /><br />
-                <span className="b">Assignment 2 (week 4-5): Kimi 3</span>
+                <span className="b">Assignment 2 (week 4-5): Kimi K3</span>
               </div>
             </div>
 
