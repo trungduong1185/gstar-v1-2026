@@ -23,7 +23,7 @@ const About = () => {
               beyond, into the global AI world.
             </p>
             <p className="font-body mb4">
-              Over 12 weeks, you work on real research and industry projects under
+              Over 14 weeks, you work on real research and industry projects under
               the guidance of NTI&rsquo;s international advisors and partner
               companies.
             </p>

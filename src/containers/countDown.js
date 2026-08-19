@@ -23,7 +23,7 @@ const HtmlCountDown = ({ d, h, m, s }) => (
       </div>
 
       <p className="hero-desc">
-        A 12-week, fully online accelerator that equips emerging AI talents with
+        A 14-week, fully online accelerator that equips emerging AI talents with
         cutting-edge technical expertise and leadership skills, culminating in a
         showcase at Demo Day and the GStar Summit.
       </p>

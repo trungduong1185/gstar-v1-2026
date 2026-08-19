@@ -18,7 +18,7 @@ const timelineData = [
   {
     period: 'Sept – Dec 2026',
     title: 'Official Program',
-    description: '12-week intensive training and project development, fully online.',
+    description: '14-week intensive training and project development, fully online.',
     active: false,
   },
   {

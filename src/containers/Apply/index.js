@@ -12,7 +12,7 @@ const HtmlApply = ({ d, h, m, s }) => {
       <p className="f2 ttu tracked fw7 ph3">Ready to Accelerate Your AI Career?</p>
 
       <p className="f6 tracked fw3 mt4 ph3">
-      Join 100 talented engineers from Vietnam and beyond for a transformative 12-week journey.
+      Join 100 talented engineers from Vietnam and beyond for a transformative 14-week journey.
       </p>
 
       <div className="flex w-100 center">

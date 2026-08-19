@@ -66,7 +66,7 @@ const What = ({ id }) => {
               <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 3', marginLeft: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Individual Project brainstorming</span>
                 <br />
-                Goal: think critically about interesting and impactful ideas that can be achieved in 12 weeks.
+                Goal: think critically about interesting and impactful ideas that can be achieved in 14 weeks.
                 <br />
                 Deliverables: project proposal (2–4 pages) to be reviewed by technical buddies &amp; program leads.
               </div>
