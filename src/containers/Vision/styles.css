@@ -1,14 +1,12 @@
 /* Vision Grid */
 .vision-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 56px 44px;
   padding: 0;
 }
 
 .vision-item {
-  width: 320px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -43,8 +41,15 @@
   color: #4b5361;
 }
 
-@media (max-width: 360px) {
-  .vision-item {
-    width: 100%;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .vision-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-grid {
+    grid-template-columns: 1fr;
+    gap: 36px 0;
   }
 }
