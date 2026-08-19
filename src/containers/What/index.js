@@ -8,16 +8,11 @@ const What = ({ id }) => {
   const [selectedId, setSelectedId] = useState(1);
   var isMobile = useMediaQuery('(max-width: 768px)');
 
-  const toggleCol_1 =
-    selectedId === 1 ? 'db w-100  w-50-l ' : 'dn db-l w-50-l ';
-  const toggleCol_2 =
-    selectedId === 2 ? 'db w-100  w-50-l ' : 'dn db-l w-50-l ';
-
   return (
     <div className="w-100 lh-copy block-pt-pb" style={{background: '#ffffff'}}>
       <div id={id} />
       <div className="container center flex flex-wrap flex-column flex-row-l">
-        {/* <!-- cot 1 --> */}
+        {/* col 1 — sticky title */}
         <div
           className="w-100 w-30-l f2 fw7 ttu ph2 pl0 pr5-l pc-what-title tc tl-l tracked-l"
           style={!isMobile ? { position: 'sticky', top: '6rem', alignSelf: 'flex-start' } : undefined}
@@ -27,7 +22,7 @@ const What = ({ id }) => {
           bootcamp
         </div>
 
-        {/* <!-- cot 2 --> */}
+        {/* col 2 — content */}
         <div className="w-100 w-70-l pc-what-content fw3">
 
           {/* mobile tab switcher */}
@@ -60,7 +55,7 @@ const What = ({ id }) => {
 
           <div className={isMobile ? 'w-100' : 'w-90 center'}>
 
-            {/* Week 1–2 */}
+            {/* ── Week 1–2 ── */}
             <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto', rowGap: '12px', columnGap: 0 }}>
               <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 1</div>
               <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
@@ -79,42 +74,50 @@ const What = ({ id }) => {
               <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 2, marginRight: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Pre-training</span>
                 <br />
-                Goal: develop in-depth understanding of attention (Linear Attention, FlashAttention), advanced Transformers (Sparse Transformer, Transformer-XL, MoE), hybrid architectures (Mamba), and LLM pretraining.
+                Goal: develop in-depth understanding of attention (e.g., Linear Attention, FlashAttention), advanced Transformers (Sparse Transformer - Transformer-XL, MoE) and LLM pretraining.
                 <br />
-                Tutorial: train a large language model from scratch.
-                <br />
-                Assignment 1 (weeks 1–2): optimizer state sharding.
+                Tutorial: Train a large language model from scratch.
+                <br /><br />
+                <span className="b">Assignment 1 (week 1-2): Optimizer state sharding</span>
               </div>
             </div>
 
-            {/* Week 3–5 */}
-            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto auto', rowGap: '12px', columnGap: 0 }}>
-              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 3</div>
-              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
+            {/* ── Week 3 (standalone) ── */}
+            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', columnGap: 0 }}>
+              <div className="tc fw5" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 3</div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ marginRight: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Post-training</span>
                 <br />
-                Goal: understand supervised finetuning (SFT) and parameter-efficient methods. Learn how to prepare data, set up training, tune hyperparameters, perform decoding, and evaluate.
+                Goal: understand supervised finetuning (SFT) and parameter-efficient methods. Learn how to prepare data, setup training, hyperparameter optimization, perform decoding, and evaluation.
               </div>
-              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 3', marginLeft: isMobile ? 0 : '0.5rem' }}>
+              {/* right column empty on desktop, hidden on mobile */}
+              <div className={`dn${isMobile ? '' : ' db-l'}`} style={{ marginLeft: '0.5rem' }} />
+            </div>
+
+            {/* ── Week 4–5 ── */}
+            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto', rowGap: '12px', columnGap: 0 }}>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 4</div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Deepdive on Kimi 3</span>
+              </div>
+              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 2', marginLeft: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Individual Project prototype</span>
                 <br />
                 Goal: implement the first version of the project proposal utilizing knowledge learned during the first 6 weeks.
                 <br />
                 Deliverables: project presentation presented to technical buddies, program leads, and senior advisors.
               </div>
-              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 4</div>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 5</div>
               <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 2, marginRight: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Alignment &amp; Advanced reasoning</span>
                 <br />
-                Goal: understand learning from human feedback (RLHF, DPO, SimPO) and recent developments in reasoning models (DeepSeek-R1, GRPO, RLVR), including RL for agents.
-              </div>
-              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 3, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 5</div>
-              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 3, marginRight: isMobile ? 0 : '0.5rem' }}>
-                <span className="b">Assignment 2 (weeks 3–5): train math reasoning models with GRPO</span>
+                Goal: understand learning from human feedback (RLHF, DPO) and recent developments for advanced reasoning models (DeepSeek-R1 and GRPO).
+                <br /><br />
+                <span className="b">Assignment 2 (week 4-5): Kimi 3</span>
               </div>
             </div>
 
-            {/* Week 6 — milestone */}
+            {/* ── Week 6 — milestone ── */}
             <div className="w-100 flex justify-end pv2">
               <div className="w-20 tc fw5 flex flex-wrap">
                 <div className="w-100 h4">Week 6</div>
@@ -126,26 +129,32 @@ const What = ({ id }) => {
               </div>
             </div>
 
-            {/* Week 7–8 */}
-            <div
-              className="w-100 pv2"
-              style={{
-                display: 'grid',
-                gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr',
-                gridTemplateRows: 'auto auto',
-                rowGap: '12px',
-                columnGap: 0,
-              }}
-            >
+            {/* ── Week 7–9 ── */}
+            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto auto', rowGap: '12px', columnGap: 0 }}>
               {/* Week 7 label */}
-              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>
-                Week 7
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 7</div>
+              {/* Assignment 3 */}
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Assignment 3 (week 5-7): Train math reasoning models with GRPO</span>
               </div>
-              {/* Agents block */}
-              <div
-                className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`}
-                style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}
-              >
+              {/* Capstone Team Project — spans rows 1–3 */}
+              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 3', marginLeft: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Capstone Team Project forming and topic refinement</span>
+                <br />
+                Goal: form your team, define and refine the idea based on feedback of the prototype.
+                <br />
+                Deliverables:
+                <ul className='ul-list-conent'>
+                  <li>Project mid-term report (2–4 pages) on the latest results</li>
+                  <li>Initial code submission</li>
+                </ul>
+                <br />
+                To be reviewed by technical buddies &amp; program leads.
+              </div>
+              {/* Week 8 label */}
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 8</div>
+              {/* Agents */}
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 2, marginRight: isMobile ? 0 : '0.5rem' }}>
                 <div style={{display:'flex', alignItems:'center', gap:'8px', flexWrap:'wrap', marginBottom:'8px', justifyContent:'center'}}>
                   <span className="b">Agents and evaluation</span>
                   <span style={{background:'#f6eeee', color:'#731013', border:'1px solid #f0d0d1', borderRadius:'999px', fontSize:'0.6rem', fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase', padding:'3px 10px'}}>EXPANDED FOR 2026</span>
@@ -159,45 +168,28 @@ const What = ({ id }) => {
                   <li>Evaluation: automated benchmarks (BLEURT, COMET) and LLM-as-judge</li>
                 </ul>
               </div>
-              {/* Team Project — spans rows 1–2 */}
-              <div
-                className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`}
-                style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 2', marginLeft: isMobile ? 0 : '0.5rem' }}
-              >
-                <span className="b">Team Project refinement</span>
+              {/* Week 9 label */}
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 3, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 9</div>
+              {/* Advanced Inference */}
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 3, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Advanced Inference</span>
                 <br />
-                Goal: refine the idea and implementation based on feedback of the prototype.
-                <br />
-                Deliverables:
-                <ul className='ul-list-conent'>
-                  <li>project mid-term report (2–4 pages) on the latest results</li>
-                  <li>initial code submission</li>
-                </ul>
-                <br />
-                To be reviewed by technical buddies &amp; program leads.
-              </div>
-              {/* Week 8 label */}
-              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>
-                Week 8
-              </div>
-              {/* Advanced inference block */}
-              <div
-                className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`}
-                style={{ gridColumn: 2, gridRow: 2, marginRight: isMobile ? 0 : '0.5rem' }}
-              >
-                <span className="b">Advanced inference</span>
-                <br />
-                Goal: kv-caching, advanced and speculative decoding, Triton, serving optimizations, FLOPS and GPU utilization.
+                Goal: kv-caching, advanced decoding algorithms &amp; serving optimizations.
               </div>
             </div>
 
-            {/* Week 9–11 */}
-            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto auto', rowGap: '12px', columnGap: 0 }}>
-              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 9</div>
-              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
-                <span className="b">Guest lectures</span>
-              </div>
-              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 3', marginLeft: isMobile ? 0 : '0.5rem' }}>
+            {/* ── Week 10–13 ── */}
+            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto auto auto', rowGap: '12px', columnGap: 0 }}>
+              {['10', '11', '12', '13'].map((week, i) => (
+                <>
+                  <div key={`lbl-${week}`} className="tc fw5" style={{ gridColumn: 1, gridRow: i + 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week {week}</div>
+                  <div key={`left-${week}`} className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: i + 1, marginRight: isMobile ? 0 : '0.5rem' }}>
+                    <span className="b">Guest lectures &amp; Project Consultations</span>
+                  </div>
+                </>
+              ))}
+              {/* Team Project completion — spans all 4 rows */}
+              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 4', marginLeft: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Team Project completion</span>
                 <br />
                 Goal: complete the project with polished results and implementation.
@@ -211,20 +203,12 @@ const What = ({ id }) => {
                 <br />
                 To be graded by technical buddies &amp; program leads.
               </div>
-              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 10</div>
-              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 2, marginRight: isMobile ? 0 : '0.5rem' }}>
-                <span className="b">Guest lectures</span>
-              </div>
-              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 3, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 11</div>
-              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 3, marginRight: isMobile ? 0 : '0.5rem' }}>
-                <span className="b">Guest lectures</span>
-              </div>
             </div>
 
-            {/* Week 12 — milestone */}
+            {/* ── Week 14 — Demo Day ── */}
             <div className="w-100 flex justify-end pv2">
               <div className="w-20 tc fw5 flex flex-wrap">
-                <div className="w-100 h4">Week 12</div>
+                <div className="w-100 h4">Week 14</div>
               </div>
               <div className="w-80 yellow-week-box bg-pc-red ttu pc-white tc">
                 <span className='f3 fw7'>Demo Day: final project presentation</span>
