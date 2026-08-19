@@ -55,15 +55,15 @@ const What = ({ id }) => {
 
           <div className={isMobile ? 'w-100' : 'w-90 center'}>
 
-            {/* ── Week 1–2 ── */}
-            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto', rowGap: '12px', columnGap: 0 }}>
+            {/* ── Week 1–3 ── */}
+            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto auto', rowGap: '12px', columnGap: 0 }}>
               <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 1</div>
               <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Review of advanced NLP techniques</span>
                 <br />
                 Goal: recap fundamental knowledge such as attention, tokenization, Transformer, and end-to-end training.
               </div>
-              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 2', marginLeft: isMobile ? 0 : '0.5rem' }}>
+              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 3', marginLeft: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Individual Project brainstorming</span>
                 <br />
                 Goal: think critically about interesting and impactful ideas that can be achieved in 12 weeks.
@@ -80,18 +80,12 @@ const What = ({ id }) => {
                 <br /><br />
                 <span className="b">Assignment 1 (week 1-2): Optimizer state sharding</span>
               </div>
-            </div>
-
-            {/* ── Week 3 (standalone) ── */}
-            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', columnGap: 0 }}>
-              <div className="tc fw5" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 3</div>
-              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ marginRight: isMobile ? 0 : '0.5rem' }}>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 3, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 3</div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 3, marginRight: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Post-training</span>
                 <br />
                 Goal: understand supervised finetuning (SFT) and parameter-efficient methods. Learn how to prepare data, setup training, hyperparameter optimization, perform decoding, and evaluation.
               </div>
-              {/* right column empty on desktop, hidden on mobile */}
-              <div className={`dn${isMobile ? '' : ' db-l'}`} style={{ marginLeft: '0.5rem' }} />
             </div>
 
             {/* ── Week 4–5 ── */}
