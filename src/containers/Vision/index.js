@@ -85,17 +85,19 @@ const items = [
 
 const Vision = ({ id }) => (
   <div id={id} className="w-100 tc block-pt-pb bg-program">
-    <p className="center f3 f2-l fw7 pc-red ttu tracked-l ph3">
-      What You'll Get
-    </p>
-    <div className="vision-grid center mt3 mt4-l">
-      {items.map((item, i) => (
-        <div key={i} className="vision-item">
-          <div className="vision-icon">{item.icon}</div>
-          <div className="vision-title">{item.title}</div>
-          <p className="vision-desc">{item.content}</p>
-        </div>
-      ))}
+    <div className="container center">
+      <p className="f3 f2-l fw7 pc-red ttu tracked-l">
+        What You'll Get
+      </p>
+      <div className="vision-grid mt3 mt4-l">
+        {items.map((item, i) => (
+          <div key={i} className="vision-item">
+            <div className="vision-icon">{item.icon}</div>
+            <div className="vision-title">{item.title}</div>
+            <p className="vision-desc">{item.content}</p>
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 );
