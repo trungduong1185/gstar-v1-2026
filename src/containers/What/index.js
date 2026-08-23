@@ -236,7 +236,7 @@ const What = ({ id }) => {
                   Apply Now
                 </a>
                 <div style={{ marginTop: '14px', fontSize: '0.875rem', color: '#656e7c' }}>
-                  Deadline: August 23, 2026, Indochina Time
+                  Deadline: August 24, 2026, Indochina Time
                 </div>
               </div>
             </div>
