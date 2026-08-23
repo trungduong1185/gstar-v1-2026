@@ -172,18 +172,14 @@ const What = ({ id }) => {
               </div>
             </div>
 
-            {/* ── Week 10–13 ── */}
-            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto auto auto', rowGap: '12px', columnGap: 0 }}>
-              {['10', '11', '12', '13'].map((week, i) => (
-                <>
-                  <div key={`lbl-${week}`} className="tc fw5" style={{ gridColumn: 1, gridRow: i + 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week {week}</div>
-                  <div key={`left-${week}`} className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: i + 1, marginRight: isMobile ? 0 : '0.5rem' }}>
-                    <span className="b">Guest lectures &amp; Project Consultations</span>
-                  </div>
-                </>
-              ))}
-              {/* Team Project completion — spans all 4 rows */}
-              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 4', marginLeft: isMobile ? 0 : '0.5rem' }}>
+            {/* ── Week 10–13 (merged into one block) ── */}
+            <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', rowGap: '12px', columnGap: 0 }}>
+              <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: isMobile ? 'flex-end' : 'center', paddingTop: '8px', paddingRight: isMobile ? '8px' : 0 }}><span style={{ textAlign: isMobile ? 'right' : 'center' }}>Week{isMobile ? <br /> : ' '}10&ndash;13</span></div>
+              <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
+                <span className="b">Guest lectures &amp; Project Consultations</span>
+              </div>
+              {/* Team Project completion */}
+              <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: 1, marginLeft: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Team Project completion</span>
                 <br />
                 Goal: complete the project with polished results and implementation.

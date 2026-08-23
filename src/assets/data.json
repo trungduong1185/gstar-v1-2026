@@ -41,7 +41,7 @@
         "aiexpertnetwork": {
             "name": "AI EXPERT NETWORK",
             "id": "ai_expert_network"
-        },       
+        },
         "tuitionfee": {
             "name": "TUITION FEE",
             "id": "tuition_fee"
@@ -128,7 +128,6 @@
             "desc": "Co-Founder / CEO - Vuihoc",
             "content": "\"We don't know what we don't know <br/>But when we perceive it, we know where to start. <br/>Think big, step small, grow fast, focus to do, start now & enjoy it.\"",
             "image": "images/s_Lam.jpg?v=1"
-            
         },
         "col_2": {
             "title": "Mr.Tung",
@@ -219,7 +218,7 @@
                     "id": 3,
                     "name": "Dr. Jeff Dean",
                     "image": "m_2025_jeff_dean.webp",
-                    "title": "<ul class=\"mentors-title\"><li>Chief Scientist of Google Research and Google DeepMind</li><li class=\"i\">GStar Senior Advisor</li></ul>",
+                    "title": "<ul class=\"mentors-title\"><li>Former Chief Scientist of Google Research and Google DeepMind</li><li class=\"i\">GStar Senior Advisor</li></ul>",
                     "description": "Jeff Dean, a distinguished figure in the realm of computer science, has made significant and lasting contributions to the field of artificial intelligence (AI). His work at Google, where he currently serves as the head of Google AI, has been instrumental in propelling the company to the forefront of AI research and development. A true visionary, Dean was one of the founding members of Google Brain, a team that pioneered the development of large-scale artificial neural networks, a cornerstone of modern AI systems. His expertise and leadership have played a pivotal role in shaping Google's AI strategy and have solidified his position as a leading voice in the AI community."
                 },
                 {
@@ -237,18 +236,18 @@
                     "description": "Preslav Nakov is Professor and Department Chair for NLP at the Mohamed bin Zayed University of Artificial Intelligence (MBZUAI). His research focuses on natural language processing, with a particular interest in large language models. He is part of the core team at MBZUAI's Institute for Foundation Models that developed Jais, the world's best open-source Arabic-centric LLM, Nanda, the world's best open-weights Hindi model, Sherkala, the world's best open-weights Kazakh model, and LLM360, the first truly open LLM (open weights, open data, and open code). <br><br>A prominent figure in computational linguistics, he is Chair of the European Chapter of the Association for Computational Linguistics (EACL). He served as Program Committee Chair for ACL 2022, as President of ACL SIGLEX, as Secretary of SIGSLAV, and holds editorial roles across leading NLP and AI journals. His research has been featured in MIT Technology Review, Forbes, WIRED, Fast Company, and Communications of the ACM, among others."
                 },
                 {
-                    "id": 2,
-                    "name": "Dr. Yi Tay",
-                    "image": "m_2025_yitay.webp",
-                    "title": "<ul class=\"mentors-title\"><li>Scientist & Engineer at Google DeepMind</li><li class=\"i\">GStar Guest Lecturer</li></ul>",
-                    "description": "Yi Tay is a Senior Staff Research Scientist at Google DeepMind, previously spending over three years at Google Brain Singapore, where he contributed to cutting-edge research on large language models (LLMs) and NLP. He is also a co-founder of Reka AI, where his team developed Reka Core, a model that ranked in the top 5 on LMsys and competed with GPT-4 under limited resources.<br>Yi Tay's work explores emergent abilities, scaling laws, and the science behind LLMs, combining academic rigor with real-world applications. Passionate about advancing AI, he continues to push the boundaries of trustworthy, scalable, and efficient language models."
+                    "id": 21,
+                    "name": "Dr. Youngsuk Park",
+                    "image": "m_2025_youngsuk.webp",
+                    "title": "<ul class=\"mentors-title\"><li>Senior Applied Scientist & Research Lead at AWS AI</li><li>Core Algorithm Team Lead at AWS Annapurna Science</li><li class=\"i\">GStar Guest Lecturer</li></ul>",
+                    "description": "Dr. Youngsuk Park is a Senior Applied Scientist and Research Lead at Amazon Web Services (AWS) AI, where he leads the Core Algorithm team at AWS Annapurna Science, managing a research organization of 14+ applied scientists, Amazon scholars, and research interns. His team develops algorithms that power foundation models across Amazon Bedrock, AGI, and Anthropic partnerships, and he has co-authored 35+ papers at top machine learning conferences including ICLR, ICML, NeurIPS, AISTATS, and KDD. His research spans hardware-aware model architectures and fine-grained scaling laws for high-throughput systems, efficient training via low-precision methods and system-aware optimizers, post-training and alignment through RLVR-based approaches and robust reward modeling, and generative AI for systems such as DSL kernel synthesis via inference-time scaling. He received his Ph.D. in Electrical Engineering from Stanford University in 2020, advised by Stephen P. Boyd and Jure Leskovec, following an M.S. from Stanford in 2016 and a B.S. from KAIST in 2013 (Summa Cum Laude)."
                 },
                 {
-                    "id": 6,
-                    "name": "Prof. Graham Neubig",
-                    "image": "m_2025_graham_neubig.webp",
-                    "title": "<ul class=\"mentors-title\"><li>Associate Professor at the School of Computer Science, Carnegie Mellon University</li><li class=\"i\">GStar Guest Lecturer</li></ul>",
-                    "description": "Graham Neubig is an Associate Professor at the Language Technology Institute, School of Computer Science, Carnegie Mellon University, and serves as Chief Scientist at All Hands AI. He leads NeuLab, focusing on advancing machine learning and natural language processing (NLP) through foundational research and practical systems. His expertise spans multilingual language processing, question answering, code generation, and interpretable learning. Neubig has also developed widely used open-source software for NLP applications and regularly shares class and tutorial notes to support the community. He is known for delivering invited talks on LLM-powered agents and model evaluation at leading venues including CMU, Stanford, and UIUC."
+                    "id": 18,
+                    "name": "Hannes Stärk",
+                    "image": "m_2025_hannes_stark.webp",
+                    "title": "<ul class=\"mentors-title\"><li>Founding Scientist at Boltz</li><li>PhD in EECS, MIT</li><li class=\"i\">GStar Guest Lecturer</li></ul>",
+                    "description": "Hannes Stärk is a founding scientist at Boltz. He received his PhD in Electrical Engineering and Computer Science from MIT, where he was advised by Tommi Jaakkola and Regina Barzilay. His work focuses on machine learning for biomolecular engineering, including structure and affinity prediction, molecular dynamics, and drug design. He also hosts Starkly Speaking, a weekly reading group where participants discuss research papers with their authors across machine learning for biology, molecular dynamics, diffusion, generative models, and protein design."
                 },
                 {
                     "id": 7,
@@ -291,25 +290,29 @@
                     "image": "m_2025_hoangtran.webp",
                     "title": "<ul class=\"mentors-title\"><li>Research Engineer at OpenAI</li><li>Head of Industry at NTI</li><li class=\"i\">GStar Academic Team</li></ul>",
                     "description": "Hoang Tran is currently a research engineer at OpenAI. He was previously a research scientist at Snorkel AI, where he developed a state‑of‑the‑art, open‑source LLM that topped Stanford AI Lab - Tatsu Lab's AlpacaEval leaderboard, and he presented this work at NVIDIA GTC 2024. At Snorkel, he also advised Fortune 500 enterprises on building custom LLMs and agentic systems. In 2020, Hoang co‑founded Vizly, a design‑feedback startup selected for the Mozilla Foundation's Fix‑the‑Internet Spring MVP Lab."
-                },{
+                },
+                {
                     "id": 13,
                     "name": "Chien Nguyen",
                     "image": "m_2025_chiennguyen.webp",
                     "title": "<ul class=\"mentors-title\"><li>PhD student in Computer Science at the University of Oregon</li><li class=\"i\">GStar Academic Team</li></ul>",
                     "description": "Chien Nguyen is a Ph.D. student in Computer Science at the University of Oregon, specializing in Natural Language Processing (NLP), Large Language Models (LLMs), and generative AI. Previously, he was a Research Resident at VinAI Research, where he worked on information extraction and the development of multilingual LLMs. Chien has co-authored multiple papers at ACL, EMNLP, and COLING, including CulturaX, one of the largest multilingual datasets for LLM training, and Okapi, a framework for instruction-tuning LLMs with RLHF in 26 languages. He also lectures on advanced NLP and LLMs at VietAI. His current research explores large-scale generative models, multimodal learning, and cross-lingual transfer techniques."
-                },{
+                },
+                {
                     "id": 14,
                     "name": "Huy Nguyen",
                     "image": "m_2025_huy_nguyen.webp",
                     "title": "<ul class=\"mentors-title\"><li>PhD student in Computer Science at the University of Oregon</li><li class=\"i\">GStar Academic Team</li></ul>",
                     "description": "Huy Nguyen is a PhD student in Computer Science at the University of Oregon, specializing in Natural Language Processing and efficient Large Language Models. His research focuses on accelerating LLMs through low-level GPU optimization with CUDA and Triton, including instruction-level scheduling for both standard and quantized models. Nguyen previously served as an AI Resident at VinAI Research, contributing state-of-the-art methods in continual relation extraction and cross-lingual event detection. He has co-authored publications at EMNLP and on arXiv, and developed Vistral-7B-Chat, a leading Vietnamese conversational model with over 100,000 downloads. Recognized with the Lokey Award, he also interned at Microsoft Research, advancing GPU scheduling for fast inference."
-                },{
+                },
+                {
                     "id": 15,
                     "name": "Thanh Le",
                     "image": "m_2025_thanh_le.webp",
                     "title": "<ul class=\"mentors-title\"><li>PhD student, Northeastern University, Boston, Massachusetts</li><li class=\"i\">GStar Academic Team</li></ul>",
                     "description": "Van Thanh Le is a 2nd year Ph.D. student in Computer Engineering at Northeastern University, advised by Prof. Raymond Fu, specializing in controllable, safe and efficient deep generative models, and he is currently an intern at Adobe Reserach. Previously, he was an AI Research Resident at VinAI Research, where he focused on diffusion acceleration and adversarial protection against misuse . He has published at CVPR, ICCV, and ECCV, including work on one-step diffusion efficiency and defenses against unauthorized personalization."
-                },{
+                },
+                {
                     "id": 16,
                     "name": "Long Phan",
                     "image": "m_2025_long_phan.webp",
@@ -322,13 +325,6 @@
                     "image": "m_2025_hieu_ngo.webp",
                     "title": "<ul class=\"mentors-title\"><li>Senior AI Engineer at MoMo</li><li class=\"i\">GStar Academic Team</li></ul>",
                     "description": "Hieu Ngo is a Senior AI Engineer at MoMo, where he leads the AI Research and Development team. He earned his B.S. in Computer Science from the University of California, Los Angeles in 2019, where he collaborated with Trieu H. Trinh and Minh-Thang Luong (DeepMind). Ngo has contributed to influential projects such as HarmBench, a standardized framework for automated red teaming, Representation Engineering, and Circuit Breakers for improving alignment and robustness. He is also a co-author on large-scale initiatives like BLOOM and multilingual models, and his research spans LLMs, transparency, and safety evaluations. Ngo's work has appeared in ACL, NAACL, EACL, and leading AI conferences."
-                },
-                {
-                    "id": 18,
-                    "name": "Hannes Stärk",
-                    "image": "m_2025_hannes_stark.webp",
-                    "title": "<ul class=\"mentors-title\"><li>Founding Scientist at Boltz</li><li>PhD in EECS, MIT</li><li class=\"i\">GStar Guest Lecturer</li></ul>",
-                    "description": "Hannes Stärk is a founding scientist at Boltz. He received his PhD in Electrical Engineering and Computer Science from MIT, where he was advised by Tommi Jaakkola and Regina Barzilay. His work focuses on machine learning for biomolecular engineering, including structure and affinity prediction, molecular dynamics, and drug design. He also hosts Starkly Speaking, a weekly reading group where participants discuss research papers with their authors across machine learning for biology, molecular dynamics, diffusion, generative models, and protein design."
                 },
                 {
                     "id": 19,
@@ -345,15 +341,21 @@
                     "description": "Tri Dao is an Assistant Professor of Computer Science at Princeton University, where he leads the Dao AI Lab, and Co-founder and Chief Scientist of Together AI. He completed his PhD in Computer Science at Stanford University. His research spans machine learning and systems, with a focus on efficient training and inference — including hardware-aware algorithms and sequence models with long-range memory. His work has been recognized with the Schmidt Sciences AI2050 Fellowship (2025), the Google ML and Systems Junior Faculty Award and Google Research Scholar Award (2025), and multiple best- and outstanding-paper honors at MLSys, COLM, and ICML."
                 },
                 {
-                    "id": 21,
-                    "name": "Dr. Youngsuk Park",
-                    "image": "m_2025_youngsuk.webp",
-                    "title": "<ul class=\"mentors-title\"><li>Senior Applied Scientist & Research Lead at AWS AI</li><li>Core Algorithm Team Lead at AWS Annapurna Science</li><li class=\"i\">GStar Guest Lecturer</li></ul>",
-                    "description": "Dr. Youngsuk Park is a Senior Applied Scientist and Research Lead at Amazon Web Services (AWS) AI, where he leads the Core Algorithm team at AWS Annapurna Science, managing a research organization of 14+ applied scientists, Amazon scholars, and research interns. His team develops algorithms that power foundation models across Amazon Bedrock, AGI, and Anthropic partnerships, and he has co-authored 35+ papers at top machine learning conferences including ICLR, ICML, NeurIPS, AISTATS, and KDD. His research spans hardware-aware model architectures and fine-grained scaling laws for high-throughput systems, efficient training via low-precision methods and system-aware optimizers, post-training and alignment through RLVR-based approaches and robust reward modeling, and generative AI for systems such as DSL kernel synthesis via inference-time scaling. He received his Ph.D. in Electrical Engineering from Stanford University in 2020, advised by Stephen P. Boyd and Jure Leskovec, following an M.S. from Stanford in 2016 and a B.S. from KAIST in 2013 (Summa Cum Laude)."
+                    "id": 2,
+                    "name": "Dr. Yi Tay",
+                    "image": "m_2025_yitay.webp",
+                    "title": "<ul class=\"mentors-title\"><li>Scientist & Engineer at Google DeepMind</li><li class=\"i\">Former Guest Lecturer</li></ul>",
+                    "description": "Yi Tay is a Senior Staff Research Scientist at Google DeepMind, previously spending over three years at Google Brain Singapore, where he contributed to cutting-edge research on large language models (LLMs) and NLP. He is also a co-founder of Reka AI, where his team developed Reka Core, a model that ranked in the top 5 on LMsys and competed with GPT-4 under limited resources.<br>Yi Tay's work explores emergent abilities, scaling laws, and the science behind LLMs, combining academic rigor with real-world applications. Passionate about advancing AI, he continues to push the boundaries of trustworthy, scalable, and efficient language models."
+                },
+                {
+                    "id": 6,
+                    "name": "Prof. Graham Neubig",
+                    "image": "m_2025_graham_neubig.webp",
+                    "title": "<ul class=\"mentors-title\"><li>Associate Professor at the School of Computer Science, Carnegie Mellon University</li><li class=\"i\">Former Guest Lecturer</li></ul>",
+                    "description": "Graham Neubig is an Associate Professor at the Language Technology Institute, School of Computer Science, Carnegie Mellon University, and serves as Chief Scientist at All Hands AI. He leads NeuLab, focusing on advancing machine learning and natural language processing (NLP) through foundational research and practical systems. His expertise spans multilingual language processing, question answering, code generation, and interpretable learning. Neubig has also developed widely used open-source software for NLP applications and regularly shares class and tutorial notes to support the community. He is known for delivering invited talks on LLM-powered agents and model evaluation at leading venues including CMU, Stanford, and UIUC."
                 }
-
             ]
-        }   
+        }
     ],
     "processes": [
         {
