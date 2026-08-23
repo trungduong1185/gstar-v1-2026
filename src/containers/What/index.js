@@ -157,12 +157,9 @@ const What = ({ id }) => {
                   <span style={{background:'#f6eeee', color:'#731013', border:'1px solid #f0d0d1', borderRadius:'999px', fontSize:'0.6rem', fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase', padding:'3px 10px'}}>UPDATED FOR 2026</span>
                 </div>
                 <ul className='ul-list-conent' style={{textAlign:'left'}}>
-                  <li>Computer use agents (CUA)</li>
-                  <li>Coding agents and autonomous engineering workflows</li>
-                  <li>Multi-agent systems: coordination, roles, division of labor</li>
-                  <li>Harness, orchestration and the Harmony framework</li>
+                  <li>Coding agents, Harness - Harmony response format</li>
                   <li>Evolutionary algorithms for agent optimization</li>
-                  <li>Evaluation: automated benchmarks (BLEURT, COMET) and LLM-as-judge</li>
+                  <li>Evaluation: automated benchmarks (terminal-bench, etc.) and LLM-as-judge</li>
                 </ul>
               </div>
               {/* Week 9 label */}
