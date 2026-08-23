@@ -152,7 +152,7 @@ const What = ({ id }) => {
               <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 8</div>
               {/* Agents */}
               <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 2, marginRight: isMobile ? 0 : '0.5rem' }}>
-                <div style={{display:'flex', alignItems:'center', gap:'8px', flexWrap:'wrap', marginBottom:'8px', justifyContent:'center'}}>
+                <div style={{display:'flex', alignItems:'center', gap:'8px', flexWrap:'wrap', marginBottom:'8px', justifyContent:'flex-start'}}>
                   <span className="b">Agents and evaluation</span>
                   <span style={{background:'#f6eeee', color:'#731013', border:'1px solid #f0d0d1', borderRadius:'999px', fontSize:'0.6rem', fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase', padding:'3px 10px'}}>EXPANDED FOR 2026</span>
                 </div>
