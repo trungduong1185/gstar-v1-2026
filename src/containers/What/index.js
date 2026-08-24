@@ -78,7 +78,7 @@ const What = ({ id }) => {
                 <br />
                 Tutorial: Train a large language model from scratch.
                 <br /><br />
-                <span className="b">Assignment 1 (week 1-2): Optimizer state sharding</span>
+                <span className="b">Assignment 1: Optimizer state sharding of Flash Attention</span>
               </div>
               <div className="tc fw5" style={{ gridColumn: 1, gridRow: 3, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 3</div>
               <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 3, marginRight: isMobile ? 0 : '0.5rem' }}>
@@ -92,10 +92,9 @@ const What = ({ id }) => {
             <div className="w-100 pv2" style={{ display: 'grid', gridTemplateColumns: isMobile ? '20% 1fr' : '20% 1fr 1fr', gridTemplateRows: 'auto auto', rowGap: '12px', columnGap: 0 }}>
               <div className="tc fw5" style={{ gridColumn: 1, gridRow: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 4</div>
               <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 1, marginRight: isMobile ? 0 : '0.5rem' }}>
-                <div style={{display:'flex', alignItems:'center', gap:'8px', flexWrap:'wrap', marginBottom:'0', justifyContent:'flex-start'}}>
-                  <span className="b">Deepdive on Kimi K3</span>
-                  <span style={{background:'#f6eeee', color:'#731013', border:'1px solid #f0d0d1', borderRadius:'999px', fontSize:'0.6rem', fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase', padding:'3px 10px'}}>NEW FOR 2026</span>
-                </div>
+                <span className="b">Alignment &amp; Advanced reasoning</span>
+                <br />
+                Goal: understand learning from human feedback (RLHF, DPO) and recent developments for advanced reasoning models (DeepSeek-R1 and GRPO).
               </div>
               <div className={`pink-week-box tc${selectedId !== 2 ? ' dn db-l' : ''}`} style={{ gridColumn: isMobile ? 2 : 3, gridRow: '1 / span 2', marginLeft: isMobile ? 0 : '0.5rem' }}>
                 <span className="b">Individual Project prototype</span>
@@ -106,10 +105,10 @@ const What = ({ id }) => {
               </div>
               <div className="tc fw5" style={{ gridColumn: 1, gridRow: 2, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '8px' }}>Week 5</div>
               <div className={`green-week-box tc d-flex align-items flex-column${selectedId !== 1 ? ' dn db-l' : ''}`} style={{ gridColumn: 2, gridRow: 2, marginRight: isMobile ? 0 : '0.5rem' }}>
-                <span className="b">Alignment &amp; Advanced reasoning</span>
-                <br />
-                Goal: understand learning from human feedback (RLHF, DPO) and recent developments for advanced reasoning models (DeepSeek-R1 and GRPO).
-                <br /><br />
+                <div style={{display:'flex', alignItems:'center', gap:'8px', flexWrap:'wrap', marginBottom:'8px', justifyContent:'flex-start'}}>
+                  <span className="b">Deepdive on Kimi K3</span>
+                  <span style={{background:'#f6eeee', color:'#731013', border:'1px solid #f0d0d1', borderRadius:'999px', fontSize:'0.6rem', fontWeight:700, letterSpacing:'0.1em', textTransform:'uppercase', padding:'3px 10px'}}>NEW FOR 2026</span>
+                </div>
                 <span className="b">Assignment 2 (week 4-5): Kimi K3</span>
               </div>
             </div>
