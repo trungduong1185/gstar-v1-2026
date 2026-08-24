@@ -60,7 +60,7 @@ const ProgramTimeline = ({ id }) => (
 
       <div className="pt-cta">
         <a href={registerLink} target="_blank" rel="noopener noreferrer" className="pt-btn">Apply Now</a>
-        <div className="pt-deadline">Deadline: August 24, 2026, Indochina Time</div>
+        <div className="pt-deadline">Deadline: August 24, 2026, 11:59pm Anywhere on Earth</div>
       </div>
     </div>
   </section>
