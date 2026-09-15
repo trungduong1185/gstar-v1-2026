@@ -236,6 +236,13 @@
                     "description": "Preslav Nakov is Professor and Department Chair for NLP at the Mohamed bin Zayed University of Artificial Intelligence (MBZUAI). His research focuses on natural language processing, with a particular interest in large language models. He is part of the core team at MBZUAI's Institute for Foundation Models that developed Jais, the world's best open-source Arabic-centric LLM, Nanda, the world's best open-weights Hindi model, Sherkala, the world's best open-weights Kazakh model, and LLM360, the first truly open LLM (open weights, open data, and open code). <br><br>A prominent figure in computational linguistics, he is Chair of the European Chapter of the Association for Computational Linguistics (EACL). He served as Program Committee Chair for ACL 2022, as President of ACL SIGLEX, as Secretary of SIGSLAV, and holds editorial roles across leading NLP and AI journals. His research has been featured in MIT Technology Review, Forbes, WIRED, Fast Company, and Communications of the ACM, among others."
                 },
                 {
+                    "id": 22,
+                    "name": "Hung Bui",
+                    "image": "m_2025_hungbui.webp",
+                    "title": "<ul class=\"mentors-title\"><li>VP of Technology at Qualcomm AI Research</li><li>Founder of VinAI</li><li class=\"i\">GStar Senior Advisor</li></ul>",
+                    "description": "Hung Bui is VP of Technology at Qualcomm AI Research, following Qualcomm's acquisition of VinAI's research and GenAI team in April 2025. He founded VinAI - Vietnam's premier AI research lab under Vingroup - and built it into a globally recognized institution before the acquisition. <br><br>Previously at Google DeepMind, Adobe Research, and Nuance NLU Lab. Spent nearly a decade at SRI International leading probabilistic inference research for the CALO project, the program that ultimately spun off Siri. Author of nearly 100 scientific publications and holder of 10+ US patents. PhD in Computer Science, Curtin University (Australia)."
+                },
+                {
                     "id": 21,
                     "name": "Dr. Youngsuk Park",
                     "image": "m_2025_youngsuk.webp",
