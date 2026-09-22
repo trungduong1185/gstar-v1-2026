@@ -1,0 +1,34 @@
+.partners-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  transition: opacity 160ms ease;
+}
+
+.partner-logo:hover {
+  opacity: 1;
+}
+
+.partner-logo img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+}
+
+.partner-logo--single img {
+  height: 72px;
+}
+
+@media (max-width: 768px) {
+  .partner-logo--single img {
+    height: 52px;
+  }
+}

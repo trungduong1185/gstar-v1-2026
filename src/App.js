@@ -15,6 +15,7 @@ import About from './containers/About';
 import ProgramTimeline from './containers/ProgramTimeline';
 import FAQ from './containers/FAQ';
 import Partners from './containers/partners';
+import StrategicPartners from './containers/StrategicPartners';
 import CohortStats from './containers/CohortStats';
 import CohortProjects from './containers/CohortProjects';
 import Testimonials from './containers/Testimonials';
@@ -37,6 +38,7 @@ function App() {
       <Testimonials />
 
       <FAQ id={menu.faq.id} />
+      <StrategicPartners />
       <Partners />
       {/* <Process /> */}
       <Apply />
