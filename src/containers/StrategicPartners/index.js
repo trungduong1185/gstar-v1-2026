@@ -7,9 +7,9 @@ const StrategicPartners = () => (
     <div className="container center tc">
       <h2 className="f2 fw7 tc tracked-l mb2">FOUNDATIONAL PARTNERS</h2>
       <div className="partners-grid">
-        <div className="partner-logo partner-logo--single">
+        <a href="https://vng.com.vn/" target="_blank" rel="nofollow noopener noreferrer" className="partner-logo partner-logo--single">
           <img src="/images/partners/vng.svg" alt="VNG" />
-        </div>
+        </a>
       </div>
     </div>
   </section>
