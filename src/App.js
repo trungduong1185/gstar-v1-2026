@@ -33,12 +33,12 @@ function App() {
       <Mentorships id={menu.aiexpertnetwork.id} title="AI EXPERT NETWORK" />
       <Vision id={menu.transformation.id} />    
       <Fee id={menu.tuitionfee.id} />
+      <StrategicPartners />
       <CohortStats />
       <CohortProjects />
       <Testimonials />
 
       <FAQ id={menu.faq.id} />
-      <StrategicPartners />
       <Partners />
       {/* <Process /> */}
       <Apply />
