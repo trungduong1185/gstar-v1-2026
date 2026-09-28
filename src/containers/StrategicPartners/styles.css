@@ -1,7 +1,9 @@
 .partners-grid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 2rem 4rem;
   margin-top: 2.5rem;
   margin-bottom: 6rem;
 }
@@ -28,8 +30,33 @@
   height: 72px;
 }
 
+/* Text wordmark — optically matched to the 72px VNG logo */
+.partner-logo--wordmark {
+  height: 72px;
+}
+
+.partner-wordmark {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 800;
+  font-size: 1.85rem;
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4056a0;
+  white-space: nowrap;
+}
+
 @media (max-width: 768px) {
   .partner-logo--single img {
     height: 52px;
+  }
+
+  .partner-logo--wordmark {
+    height: auto;
+  }
+
+  .partner-wordmark {
+    font-size: 1.15rem;
   }
 }
