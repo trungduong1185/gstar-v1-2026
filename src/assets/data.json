@@ -243,6 +243,13 @@
                     "description": "Hung Bui is VP of Technology at Qualcomm AI Research, following Qualcomm's acquisition of VinAI's research and GenAI team in April 2025. He founded VinAI - Vietnam's premier AI research lab under Vingroup - and built it into a globally recognized institution before the acquisition. <br><br>Previously at Google DeepMind, Adobe Research, and Nuance NLU Lab. Spent nearly a decade at SRI International leading probabilistic inference research for the CALO project, the program that ultimately spun off Siri. Author of nearly 100 scientific publications and holder of 10+ US patents. PhD in Computer Science, Curtin University (Australia)."
                 },
                 {
+                    "id": 23,
+                    "name": "Hieu Pham",
+                    "image": "m_2025_hieupham.webp",
+                    "title": "<ul class=\"mentors-title\"><li>Head of AI Transformation at Techcombank</li><li>Formerly OpenAI, xAI, Google AI</li><li class=\"i\">GStar Guest Lecturer</li></ul>",
+                    "description": "Hieu Pham is Head of AI Transformation at Techcombank, one of Vietnam's leading financial institutions. He previously held research roles at OpenAI and xAI (Elon Musk's AI lab), and spent several years as a Research Scientist at Google Brain. He completed his PhD in Machine Learning at Carnegie Mellon University.<br><br>Hieu is a prolific researcher behind some of the most cited works in deep learning, including ENAS (Efficient Neural Architecture Search via Parameter Sharing, ICML 2018), EfficientNet (ICML 2019), AutoAugment (CVPR 2019), MixMatch and FixMatch for semi-supervised learning, and the Mixed Precision Training framework widely adopted across the industry. His Google Scholar profile exceeds 40,000 citations, placing him among the most impactful ML researchers of his generation."
+                },
+                {
                     "id": 21,
                     "name": "Dr. Youngsuk Park",
                     "image": "m_2025_youngsuk.webp",
